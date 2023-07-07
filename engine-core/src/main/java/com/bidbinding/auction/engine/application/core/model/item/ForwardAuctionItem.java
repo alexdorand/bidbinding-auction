@@ -4,6 +4,7 @@ import com.bidbinding.auction.engine.application.core.model.bid.Bid;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -15,8 +16,11 @@ import java.util.Map;
 public final class ForwardAuctionItem implements Item {
 
     private final String id;
+    @Setter
     private List<Bid> bids;
+    @Setter
     private Map<String, Bid> participantsLastBids;
+    @Setter
     private Bid winningBid;
     private BigDecimal reservedPrice;
     //private ItemBiddingType type;

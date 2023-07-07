@@ -10,7 +10,7 @@ import java.lang.annotation.*;
 @Repository
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface DataAccessService {
+public @interface DataAccessAdapter {
 
   @AliasFor(annotation = Component.class)
   String value() default "";

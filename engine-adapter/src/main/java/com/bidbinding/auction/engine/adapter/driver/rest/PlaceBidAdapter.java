@@ -31,8 +31,8 @@ public class PlaceBidAdapter implements PlaceBidPort {
 
     @PostMapping(value = "/bid", consumes = "application/json", produces = "application/json")
     public BidPlacementResponse placeBidExpand(@RequestBody BidDto bid, @RequestHeader(value = "Correlation-Id", required = false) String correlationId) {
-        Set<ConstraintViolation<BidDto>> violations = buildDefaultValidatorFactory().getValidator().validate(bid);
-        System.out.println(violations.size());
+        //Set<ConstraintViolation<BidDto>> violations = buildDefaultValidatorFactory().getValidator().validate(bid);
+        //System.out.println(violations.size());
         PlaceBidResult placeBidResult = placeBid(new ItemBidCommand(BidAdapter.adapt(bid), bid.getItemId()));
 
         return new BidPlacementResponse(placeBidResult.name());
