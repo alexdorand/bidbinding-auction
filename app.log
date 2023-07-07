@@ -1,0 +1,1566 @@
+2023-07-03 22:56:41,453 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 76150 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-03 22:56:41,458 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-03 22:56:42,773 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-07-03 22:56:42,780 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-03 22:56:42,781 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-03 22:56:42,782 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-03 22:56:42,863 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-03 22:56:42,864 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1338 ms
+2023-07-03 22:56:43,437 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-03 22:56:43,485 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-07-03 22:56:43,494 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:616] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2023-07-03 22:56:43,498 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8080"]
+2023-07-03 22:56:43,499 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-07-03 22:56:43,511 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8080"]
+2023-07-03 22:56:43,511 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8080"]
+2023-07-03 22:56:43,529 INFO [main] o.s.b.a.l.ConditionEvaluationReportLogger [ConditionEvaluationReportLogger.java:82] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-03 22:56:43,556 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-07-03 22:57:51,172 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 76181 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-03 22:57:51,176 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-03 22:57:52,404 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-07-03 22:57:52,413 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-03 22:57:52,415 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-03 22:57:52,415 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-03 22:57:52,540 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-03 22:57:52,541 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1295 ms
+2023-07-03 22:57:53,147 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-03 22:57:53,199 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-07-03 22:57:53,205 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:616] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2023-07-03 22:57:53,209 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8080"]
+2023-07-03 22:57:53,210 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-07-03 22:57:53,216 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8080"]
+2023-07-03 22:57:53,217 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8080"]
+2023-07-03 22:57:53,229 INFO [main] o.s.b.a.l.ConditionEvaluationReportLogger [ConditionEvaluationReportLogger.java:82] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-03 22:57:53,250 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-07-03 23:35:28,171 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 76213 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-03 23:35:28,178 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-03 23:35:29,353 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-03 23:35:29,361 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-03 23:35:29,363 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-03 23:35:29,363 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-03 23:35:29,468 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-03 23:35:29,469 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1216 ms
+2023-07-03 23:35:30,033 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-03 23:35:30,068 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-03 23:35:30,091 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-03 23:35:30,108 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.353 seconds (process running for 3.183)
+2023-07-03 23:35:30,374 INFO [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-03 23:35:30,375 INFO [RMI TCP Connection(1)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-03 23:35:30,378 INFO [RMI TCP Connection(1)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 2 ms
+2023-07-03 23:37:33,097 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 76260 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-03 23:37:33,103 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-03 23:37:34,407 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-03 23:37:34,417 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-03 23:37:34,419 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-03 23:37:34,419 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-03 23:37:34,516 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-03 23:37:34,517 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1349 ms
+2023-07-03 23:37:35,062 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-03 23:37:35,097 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-03 23:37:35,112 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-03 23:37:35,125 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.51 seconds (process running for 3.279)
+2023-07-03 23:37:35,274 INFO [RMI TCP Connection(2)-10.0.0.53] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-03 23:37:35,274 INFO [RMI TCP Connection(2)-10.0.0.53] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-03 23:37:35,276 INFO [RMI TCP Connection(2)-10.0.0.53] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
+2023-07-03 23:38:47,346 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 76283 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-03 23:38:47,351 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-03 23:38:48,508 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-03 23:38:48,517 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-03 23:38:48,518 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-03 23:38:48,519 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-03 23:38:48,626 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-03 23:38:48,626 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1221 ms
+2023-07-03 23:38:49,206 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-03 23:38:49,241 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-03 23:38:49,256 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-03 23:38:49,269 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.302 seconds (process running for 2.957)
+2023-07-03 23:38:49,718 INFO [RMI TCP Connection(2)-10.0.0.53] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-03 23:38:49,719 INFO [RMI TCP Connection(2)-10.0.0.53] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-03 23:38:49,720 INFO [RMI TCP Connection(2)-10.0.0.53] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
+2023-07-04 00:00:16,405 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 76523 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-04 00:00:16,413 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-04 00:00:17,763 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-04 00:00:17,776 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-04 00:00:17,778 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-04 00:00:17,779 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-04 00:00:17,906 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-04 00:00:17,909 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1412 ms
+2023-07-04 00:00:18,612 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-04 00:00:18,662 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-04 00:00:18,690 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-04 00:00:18,710 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.848 seconds (process running for 3.654)
+2023-07-04 00:00:19,293 INFO [RMI TCP Connection(3)-10.0.0.53] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-04 00:00:19,293 INFO [RMI TCP Connection(3)-10.0.0.53] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-04 00:00:19,295 INFO [RMI TCP Connection(3)-10.0.0.53] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
+2023-07-04 00:00:23,193 ERROR [http-nio-8081-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.application.FraudDetectionService.isBidFraud(String)" because "this.fraudDetectionService" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.application.FraudDetectionService.isBidFraud(String)" because "this.fraudDetectionService" is null
+	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUsecase.recordBid(SealedBidsUsecase.java:20)
+	at com.bidbinding.auction.engine.adapter.driver.BidController.registerBid(BidController.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-04 00:01:17,587 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 76548 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-04 00:01:17,591 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-04 00:01:18,749 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-04 00:01:18,757 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-04 00:01:18,758 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-04 00:01:18,759 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-04 00:01:18,855 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-04 00:01:18,856 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1216 ms
+2023-07-04 00:01:19,428 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-04 00:01:19,469 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-04 00:01:19,487 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-04 00:01:19,503 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.316 seconds (process running for 3.006)
+2023-07-04 00:01:19,931 INFO [RMI TCP Connection(2)-10.0.0.53] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-04 00:01:19,932 INFO [RMI TCP Connection(2)-10.0.0.53] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-04 00:01:19,934 INFO [RMI TCP Connection(2)-10.0.0.53] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 2 ms
+2023-07-04 00:02:54,723 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 76565 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-04 00:02:54,727 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-04 00:02:56,040 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-04 00:02:56,050 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-04 00:02:56,052 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-04 00:02:56,053 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-04 00:02:56,137 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-04 00:02:56,137 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1360 ms
+2023-07-04 00:02:56,697 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-04 00:02:56,737 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-04 00:02:56,752 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-04 00:02:56,764 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.508 seconds (process running for 3.301)
+2023-07-04 00:02:57,202 INFO [RMI TCP Connection(3)-10.0.0.53] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-04 00:02:57,203 INFO [RMI TCP Connection(3)-10.0.0.53] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-04 00:02:57,204 INFO [RMI TCP Connection(3)-10.0.0.53] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
+2023-07-04 00:03:26,241 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 76569 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-04 00:03:26,245 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-04 00:03:27,344 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-04 00:03:27,351 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-04 00:03:27,353 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-04 00:03:27,353 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-04 00:03:27,443 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-04 00:03:27,443 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1149 ms
+2023-07-04 00:03:27,986 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-04 00:03:28,029 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-04 00:03:28,045 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-04 00:03:28,061 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.21 seconds (process running for 2.841)
+2023-07-04 00:03:28,585 INFO [RMI TCP Connection(2)-10.0.0.53] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-04 00:03:28,586 INFO [RMI TCP Connection(2)-10.0.0.53] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-04 00:03:28,587 INFO [RMI TCP Connection(2)-10.0.0.53] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
+2023-07-04 00:03:43,807 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 76572 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-04 00:03:43,810 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-04 00:03:44,806 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-04 00:03:44,813 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-04 00:03:44,814 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-04 00:03:44,814 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-04 00:03:44,891 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-04 00:03:44,892 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1038 ms
+2023-07-04 00:03:45,398 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-04 00:03:45,429 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-04 00:03:45,443 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-04 00:03:45,457 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.016 seconds (process running for 2.634)
+2023-07-04 00:03:45,713 INFO [RMI TCP Connection(3)-10.0.0.53] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-04 00:03:45,714 INFO [RMI TCP Connection(3)-10.0.0.53] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-04 00:03:45,715 INFO [RMI TCP Connection(3)-10.0.0.53] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
+2023-07-04 00:04:11,448 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 76577 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-04 00:04:11,457 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-04 00:04:12,532 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-04 00:04:12,540 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-04 00:04:12,542 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-04 00:04:12,543 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-04 00:04:12,622 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-04 00:04:12,623 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1096 ms
+2023-07-04 00:04:13,145 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-04 00:04:13,182 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-04 00:04:13,198 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-04 00:04:13,210 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.125 seconds (process running for 2.805)
+2023-07-04 00:04:13,788 INFO [RMI TCP Connection(3)-10.0.0.53] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-04 00:04:13,789 INFO [RMI TCP Connection(3)-10.0.0.53] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-04 00:04:13,791 INFO [RMI TCP Connection(3)-10.0.0.53] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 2 ms
+2023-07-04 00:06:20,191 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 76588 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-04 00:06:20,195 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-04 00:06:21,262 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-04 00:06:21,269 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-04 00:06:21,271 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-04 00:06:21,271 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-04 00:06:21,341 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-04 00:06:21,341 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1099 ms
+2023-07-04 00:06:21,857 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-04 00:06:21,888 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-04 00:06:21,903 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-04 00:06:21,917 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.084 seconds (process running for 2.726)
+2023-07-04 00:06:22,104 INFO [RMI TCP Connection(1)-10.0.0.53] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-04 00:06:22,104 INFO [RMI TCP Connection(1)-10.0.0.53] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-04 00:06:22,106 INFO [RMI TCP Connection(1)-10.0.0.53] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 2 ms
+2023-07-04 01:20:01,162 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 77174 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-04 01:20:01,172 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-04 01:20:02,447 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-04 01:20:02,456 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-04 01:20:02,459 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-04 01:20:02,459 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-04 01:20:02,539 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-04 01:20:02,540 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1255 ms
+2023-07-04 01:20:03,116 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-04 01:20:03,163 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-04 01:20:03,184 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-04 01:20:03,203 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.467 seconds (process running for 3.426)
+2023-07-04 01:20:03,807 INFO [RMI TCP Connection(2)-10.0.0.53] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-04 01:20:03,808 INFO [RMI TCP Connection(2)-10.0.0.53] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-04 01:20:03,810 INFO [RMI TCP Connection(2)-10.0.0.53] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 2 ms
+2023-07-04 01:20:41,275 ERROR [http-nio-8081-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(com.bidbinding.auction.engine.model.Bid)" because "this.itemBidsStream" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(com.bidbinding.auction.engine.model.Bid)" because "this.itemBidsStream" is null
+	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.canBeRecorded(AuctionPortImpl.java:15)
+	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUsecase.recordBid(SealedBidsUsecase.java:30)
+	at com.bidbinding.auction.engine.adapter.driver.BidController.registerBid(BidController.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-04 01:23:39,108 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 77215 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-04 01:23:39,112 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-04 01:23:40,214 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-04 01:23:40,223 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-04 01:23:40,226 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-04 01:23:40,226 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-04 01:23:40,318 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-04 01:23:40,318 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1156 ms
+2023-07-04 01:23:40,853 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-04 01:23:40,893 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-04 01:23:40,909 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-04 01:23:40,923 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.169 seconds (process running for 2.942)
+2023-07-04 01:23:41,412 INFO [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-04 01:23:41,413 INFO [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-04 01:23:41,415 INFO [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
+2023-07-04 01:23:50,990 ERROR [http-nio-8081-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(com.bidbinding.auction.engine.model.Bid)" because "this.itemBidsStream" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(com.bidbinding.auction.engine.model.Bid)" because "this.itemBidsStream" is null
+	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.canBeRecorded(AuctionPortImpl.java:15)
+	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUsecase.recordBid(SealedBidsUsecase.java:30)
+	at com.bidbinding.auction.engine.adapter.driver.BidController.registerBid(BidController.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-04 01:24:29,741 ERROR [http-nio-8081-exec-4] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(com.bidbinding.auction.engine.model.Bid)" because "this.itemBidsStream" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(com.bidbinding.auction.engine.model.Bid)" because "this.itemBidsStream" is null
+	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.canBeRecorded(AuctionPortImpl.java:15)
+	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUsecase.recordBid(SealedBidsUsecase.java:30)
+	at com.bidbinding.auction.engine.adapter.driver.BidController.registerBid(BidController.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-04 01:24:34,439 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 77235 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-04 01:24:34,447 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-04 01:24:35,539 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-04 01:24:35,547 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-04 01:24:35,548 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-04 01:24:35,549 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-04 01:24:35,629 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-04 01:24:35,630 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1126 ms
+2023-07-04 01:24:36,192 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-04 01:24:36,228 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-04 01:24:36,242 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-04 01:24:36,256 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.177 seconds (process running for 3.071)
+2023-07-04 01:24:36,605 INFO [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-04 01:24:36,606 INFO [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-04 01:24:36,607 INFO [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
+2023-07-04 01:24:57,429 ERROR [http-nio-8081-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "Object.hashCode()" because "key" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "Object.hashCode()" because "key" is null
+	at java.base/java.util.concurrent.ConcurrentHashMap.get(ConcurrentHashMap.java:936)
+	at com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(ItemBidsStreamService.java:34)
+	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.canBeRecorded(AuctionPortImpl.java:17)
+	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUsecase.recordBid(SealedBidsUsecase.java:30)
+	at com.bidbinding.auction.engine.adapter.driver.BidController.registerBid(BidController.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-04 01:26:27,377 ERROR [http-nio-8081-exec-3] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "Object.hashCode()" because "key" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "Object.hashCode()" because "key" is null
+	at java.base/java.util.concurrent.ConcurrentHashMap.get(ConcurrentHashMap.java:936)
+	at com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(ItemBidsStreamService.java:34)
+	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.canBeRecorded(AuctionPortImpl.java:17)
+	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUsecase.recordBid(SealedBidsUsecase.java:30)
+	at com.bidbinding.auction.engine.adapter.driver.BidController.registerBid(BidController.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-04 01:27:37,843 ERROR [http-nio-8081-exec-6] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "Object.hashCode()" because "key" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "Object.hashCode()" because "key" is null
+	at java.base/java.util.concurrent.ConcurrentHashMap.get(ConcurrentHashMap.java:936)
+	at com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(ItemBidsStreamService.java:34)
+	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.canBeRecorded(AuctionPortImpl.java:17)
+	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUsecase.recordBid(SealedBidsUsecase.java:30)
+	at com.bidbinding.auction.engine.adapter.driver.BidController.registerBid(BidController.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-04 01:28:07,565 ERROR [http-nio-8081-exec-8] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "Object.hashCode()" because "key" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "Object.hashCode()" because "key" is null
+	at java.base/java.util.concurrent.ConcurrentHashMap.get(ConcurrentHashMap.java:936)
+	at com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(ItemBidsStreamService.java:34)
+	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.canBeRecorded(AuctionPortImpl.java:17)
+	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUsecase.recordBid(SealedBidsUsecase.java:30)
+	at com.bidbinding.auction.engine.adapter.driver.BidController.registerBid(BidController.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-04 01:29:55,969 ERROR [http-nio-8081-exec-9] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "Object.hashCode()" because "key" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "Object.hashCode()" because "key" is null
+	at java.base/java.util.concurrent.ConcurrentHashMap.get(ConcurrentHashMap.java:936)
+	at com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(ItemBidsStreamService.java:34)
+	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.canBeRecorded(AuctionPortImpl.java:17)
+	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUsecase.recordBid(SealedBidsUsecase.java:30)
+	at com.bidbinding.auction.engine.adapter.driver.BidController.registerBid(BidController.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-04 01:32:14,096 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 77323 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-04 01:32:14,100 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-04 01:32:15,320 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-04 01:32:15,330 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-04 01:32:15,332 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-04 01:32:15,332 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-04 01:32:15,420 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-04 01:32:15,420 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1257 ms
+2023-07-04 01:32:16,045 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-04 01:32:16,087 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-04 01:32:16,102 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-04 01:32:16,117 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.524 seconds (process running for 3.369)
+2023-07-04 01:32:16,722 INFO [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-04 01:32:16,723 INFO [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-04 01:32:16,725 INFO [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
+2023-07-04 01:32:24,452 WARN [http-nio-8081-exec-1] o.s.w.s.m.s.DefaultHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('1' (code 49)): was expecting a colon to separate field name and value]
+2023-07-04 01:34:20,833 ERROR [http-nio-8081-exec-3] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.model.Bid.getAmount()" because the return value of "java.util.Map.get(Object)" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.model.Bid.getAmount()" because the return value of "java.util.Map.get(Object)" is null
+	at com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(ItemBidsStreamService.java:34)
+	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.canBeRecorded(AuctionPortImpl.java:17)
+	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUsecase.recordBid(SealedBidsUsecase.java:30)
+	at com.bidbinding.auction.engine.adapter.driver.BidController.registerBid(BidController.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-04 01:34:32,400 ERROR [http-nio-8081-exec-5] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.model.Bid.getAmount()" because the return value of "java.util.Map.get(Object)" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.model.Bid.getAmount()" because the return value of "java.util.Map.get(Object)" is null
+	at com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(ItemBidsStreamService.java:34)
+	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.canBeRecorded(AuctionPortImpl.java:17)
+	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUsecase.recordBid(SealedBidsUsecase.java:30)
+	at com.bidbinding.auction.engine.adapter.driver.BidController.registerBid(BidController.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-04 01:34:46,978 ERROR [http-nio-8081-exec-8] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.model.Bid.getAmount()" because the return value of "java.util.Map.get(Object)" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.model.Bid.getAmount()" because the return value of "java.util.Map.get(Object)" is null
+	at com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(ItemBidsStreamService.java:34)
+	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.canBeRecorded(AuctionPortImpl.java:17)
+	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUsecase.recordBid(SealedBidsUsecase.java:30)
+	at com.bidbinding.auction.engine.adapter.driver.BidController.registerBid(BidController.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-04 01:35:31,195 ERROR [http-nio-8081-exec-9] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.model.Bid.getAmount()" because the return value of "java.util.Map.get(Object)" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.model.Bid.getAmount()" because the return value of "java.util.Map.get(Object)" is null
+	at com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(ItemBidsStreamService.java:34)
+	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.canBeRecorded(AuctionPortImpl.java:17)
+	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUsecase.recordBid(SealedBidsUsecase.java:30)
+	at com.bidbinding.auction.engine.adapter.driver.BidController.registerBid(BidController.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-04 01:36:23,561 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 77370 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-04 01:36:23,566 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-04 01:36:24,785 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-04 01:36:24,797 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-04 01:36:24,799 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-04 01:36:24,800 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-04 01:36:24,891 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-04 01:36:24,892 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1271 ms
+2023-07-04 01:36:25,450 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-04 01:36:25,484 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-04 01:36:25,499 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-04 01:36:25,513 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.31 seconds (process running for 3.216)
+2023-07-04 01:36:25,791 INFO [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-04 01:36:25,791 INFO [RMI TCP Connection(3)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-04 01:36:25,793 INFO [RMI TCP Connection(3)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
+2023-07-04 01:37:22,997 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 77382 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-04 01:37:23,002 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-04 01:37:24,186 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-04 01:37:24,195 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-04 01:37:24,196 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-04 01:37:24,197 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-04 01:37:24,277 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-04 01:37:24,278 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1219 ms
+2023-07-04 01:37:24,840 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-04 01:37:24,877 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-04 01:37:24,895 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-04 01:37:24,912 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.329 seconds (process running for 3.151)
+2023-07-04 01:37:25,185 INFO [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-04 01:37:25,185 INFO [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-04 01:37:25,186 INFO [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
+2023-07-05 01:05:26,054 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 80610 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-05 01:05:26,057 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-05 01:05:26,610 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:616] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'placeBidUsecase' defined in class path resource [com/bidbinding/auction/engine/adapter/driver/DriverConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=driverConfiguration; factoryMethodName=placeBidUsecase; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/bidbinding/auction/engine/adapter/driver/DriverConfiguration.class]] for bean 'placeBidUsecase' since there is already [Generic bean: class [com.bidbinding.auction.engine.application.core.usecase.PlaceBidUsecase]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in file [/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes/com/bidbinding/auction/engine/application/core/usecase/PlaceBidUsecase.class]] bound.
+2023-07-05 01:05:26,621 INFO [main] o.s.b.a.l.ConditionEvaluationReportLogger [ConditionEvaluationReportLogger.java:82] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-05 01:05:26,652 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'placeBidUsecase', defined in class path resource [com/bidbinding/auction/engine/adapter/driver/DriverConfiguration.class], could not be registered. A bean with that name has already been defined in file [/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes/com/bidbinding/auction/engine/application/core/usecase/PlaceBidUsecase.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2023-07-05 01:06:46,172 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 80628 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-05 01:06:46,175 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-05 01:06:46,662 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:616] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'placeBidUsecase' defined in class path resource [com/bidbinding/auction/engine/adapter/driver/DriverConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=driverConfiguration; factoryMethodName=placeBidUsecase; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/bidbinding/auction/engine/adapter/driver/DriverConfiguration.class]] for bean 'placeBidUsecase' since there is already [Generic bean: class [com.bidbinding.auction.engine.application.core.usecase.PlaceBidUsecase]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in file [/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes/com/bidbinding/auction/engine/application/core/usecase/PlaceBidUsecase.class]] bound.
+2023-07-05 01:06:46,673 INFO [main] o.s.b.a.l.ConditionEvaluationReportLogger [ConditionEvaluationReportLogger.java:82] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-05 01:06:46,686 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'placeBidUsecase', defined in class path resource [com/bidbinding/auction/engine/adapter/driver/DriverConfiguration.class], could not be registered. A bean with that name has already been defined in file [/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes/com/bidbinding/auction/engine/application/core/usecase/PlaceBidUsecase.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2023-07-06 10:31:06,329 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 81591 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-06 10:31:06,335 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-06 10:31:06,955 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:616] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'placeBidUsecase' defined in class path resource [com/bidbinding/auction/engine/adapter/driver/DriverConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=driverConfiguration; factoryMethodName=placeBidUsecase; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/bidbinding/auction/engine/adapter/driver/DriverConfiguration.class]] for bean 'placeBidUsecase' since there is already [Generic bean: class [com.bidbinding.auction.engine.application.core.usecase.PlaceBidUsecase]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in file [/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes/com/bidbinding/auction/engine/application/core/usecase/PlaceBidUsecase.class]] bound.
+2023-07-06 10:31:06,974 INFO [main] o.s.b.a.l.ConditionEvaluationReportLogger [ConditionEvaluationReportLogger.java:82] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-06 10:31:07,014 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'placeBidUsecase', defined in class path resource [com/bidbinding/auction/engine/adapter/driver/DriverConfiguration.class], could not be registered. A bean with that name has already been defined in file [/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes/com/bidbinding/auction/engine/application/core/usecase/PlaceBidUsecase.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2023-07-06 10:37:26,948 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 81637 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-06 10:37:26,951 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-06 10:37:28,283 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-06 10:37:28,296 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-06 10:37:28,298 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-06 10:37:28,299 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-06 10:37:28,422 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-06 10:37:28,422 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1405 ms
+2023-07-06 10:37:29,103 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-06 10:37:29,147 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-06 10:37:29,166 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-06 10:37:29,182 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.583 seconds (process running for 3.427)
+2023-07-06 10:37:29,650 INFO [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-06 10:37:29,651 INFO [RMI TCP Connection(3)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-06 10:37:29,652 INFO [RMI TCP Connection(3)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
+2023-07-06 10:37:36,167 ERROR [http-nio-8081-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.application.core.model.bid.Bid.declareWinner()" because "bid" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.application.core.model.bid.Bid.declareWinner()" because "bid" is null
+	at com.bidbinding.auction.engine.application.core.model.item.ForwardAuctionItem.recordBid(ForwardAuctionItem.java:40)
+	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUsecase.placeBid(ForwardAuctionUsecase.java:34)
+	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUsecase.placeBid(PlaceBidUsecase.java:34)
+	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBid(PlaceBidAdapter.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-06 10:38:34,749 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 81651 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-06 10:38:34,758 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-06 10:38:36,135 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-06 10:38:36,143 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-06 10:38:36,145 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-06 10:38:36,146 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-06 10:38:36,225 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-06 10:38:36,225 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1422 ms
+2023-07-06 10:38:36,816 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-06 10:38:36,851 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-06 10:38:36,884 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-06 10:38:36,900 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.587 seconds (process running for 3.659)
+2023-07-06 10:38:37,184 INFO [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-06 10:38:37,185 INFO [RMI TCP Connection(3)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-06 10:38:37,186 INFO [RMI TCP Connection(3)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
+2023-07-06 10:40:21,932 ERROR [http-nio-8081-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.application.core.model.bid.Bid.declareWinner()" because "bid" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.application.core.model.bid.Bid.declareWinner()" because "bid" is null
+	at com.bidbinding.auction.engine.application.core.model.item.ForwardAuctionItem.recordBid(ForwardAuctionItem.java:40)
+	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUsecase.placeBid(ForwardAuctionUsecase.java:34)
+	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUsecase.placeBid(PlaceBidUsecase.java:34)
+	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBid(PlaceBidAdapter.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-06 10:40:27,356 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 81671 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-06 10:40:27,362 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-06 10:40:28,643 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-06 10:40:28,651 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-06 10:40:28,652 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-06 10:40:28,653 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-06 10:40:28,733 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-06 10:40:28,733 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1303 ms
+2023-07-06 10:40:29,347 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-06 10:40:29,404 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-06 10:40:29,425 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-06 10:40:29,440 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.442 seconds (process running for 3.4)
+2023-07-06 10:40:30,058 INFO [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-06 10:40:30,077 INFO [RMI TCP Connection(3)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-06 10:40:30,078 INFO [RMI TCP Connection(3)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
+2023-07-06 11:07:37,554 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 81826 (/Users/ad/IdeaProjects/bidbinding-auction/engine-infrastructure/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-06 11:07:37,558 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-06 11:07:38,830 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-06 11:07:38,842 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-06 11:07:38,844 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-06 11:07:38,845 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-06 11:07:38,940 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-06 11:07:38,940 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1326 ms
+2023-07-06 11:07:39,493 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-06 11:07:39,530 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-06 11:07:39,546 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-06 11:07:39,559 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.394 seconds (process running for 4.01)
+2023-07-06 11:07:39,849 INFO [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-06 11:07:39,849 INFO [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-06 11:07:39,850 INFO [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
+2023-07-06 12:01:28,151 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 82385 (/Users/ad/IdeaProjects/bidbinding-auction/engine-infrastructure/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-06 12:01:28,154 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-06 12:01:29,372 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-06 12:01:29,384 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-06 12:01:29,386 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-06 12:01:29,386 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-06 12:01:29,484 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-06 12:01:29,485 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1268 ms
+2023-07-06 12:01:30,055 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-06 12:01:30,090 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-06 12:01:30,106 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-06 12:01:30,119 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.385 seconds (process running for 3.207)
+2023-07-06 12:01:30,305 INFO [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-06 12:01:30,305 INFO [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-06 12:01:30,307 INFO [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 2 ms
+2023-07-06 12:13:33,739 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 82459 (/Users/ad/IdeaProjects/bidbinding-auction/engine-infrastructure/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-06 12:13:33,743 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-06 12:13:35,036 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-06 12:13:35,045 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-06 12:13:35,047 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-06 12:13:35,048 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-06 12:13:35,125 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-06 12:13:35,126 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1314 ms
+2023-07-06 12:13:35,731 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-06 12:13:35,782 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-06 12:13:35,802 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-06 12:13:35,819 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.543 seconds (process running for 3.45)
+2023-07-06 12:13:36,343 INFO [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-06 12:13:36,344 INFO [RMI TCP Connection(1)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-06 12:13:36,346 INFO [RMI TCP Connection(1)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 2 ms
+2023-07-06 12:15:01,881 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 82467 (/Users/ad/IdeaProjects/bidbinding-auction/engine-infrastructure/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-06 12:15:01,886 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-06 12:15:03,232 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-06 12:15:03,243 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-06 12:15:03,244 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-06 12:15:03,245 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-06 12:15:03,331 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-06 12:15:03,331 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1396 ms
+2023-07-06 12:15:04,024 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-06 12:15:04,078 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-06 12:15:04,099 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-06 12:15:04,115 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.685 seconds (process running for 3.572)
+2023-07-06 12:15:04,480 INFO [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-06 12:15:04,481 INFO [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-06 12:15:04,483 INFO [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 2 ms
+2023-07-06 12:15:08,079 WARN [http-nio-8081-exec-1] o.s.c.LocalVariableTableParameterNameDiscoverer [LocalVariableTableParameterNameDiscoverer.java:123] Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter
+2023-07-06 12:15:08,086 WARN [http-nio-8081-exec-1] o.s.w.s.m.s.DefaultHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'bid' for method parameter type BidDto is not present]
+2023-07-06 12:17:13,569 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 82494 (/Users/ad/IdeaProjects/bidbinding-auction/engine-infrastructure/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-06 12:17:13,574 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-06 12:17:14,926 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-06 12:17:14,937 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-06 12:17:14,939 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-06 12:17:14,939 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-06 12:17:15,018 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-06 12:17:15,019 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1393 ms
+2023-07-06 12:17:15,680 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-06 12:17:15,733 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-06 12:17:15,761 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-06 12:17:15,781 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.681 seconds (process running for 3.695)
+2023-07-06 12:17:16,031 INFO [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-06 12:17:16,032 INFO [RMI TCP Connection(3)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-06 12:17:16,035 INFO [RMI TCP Connection(3)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 3 ms
+2023-07-06 12:22:28,401 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 82533 (/Users/ad/IdeaProjects/bidbinding-auction/engine-infrastructure/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-06 12:22:28,405 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-06 12:22:29,693 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-06 12:22:29,704 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-06 12:22:29,705 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-06 12:22:29,706 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-06 12:22:29,789 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-06 12:22:29,789 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1332 ms
+2023-07-06 12:22:30,395 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-06 12:22:30,430 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-06 12:22:30,444 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-06 12:22:30,458 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.471 seconds (process running for 3.386)
+2023-07-06 12:22:30,979 INFO [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-06 12:22:30,979 INFO [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-06 12:22:30,980 INFO [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
+2023-07-06 12:22:40,653 WARN [http-nio-8081-exec-1] o.s.c.LocalVariableTableParameterNameDiscoverer [LocalVariableTableParameterNameDiscoverer.java:123] Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter
+2023-07-06 12:22:40,658 WARN [http-nio-8081-exec-1] o.s.w.s.m.s.DefaultHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'restRequestHeader' for method parameter type RestRequestHeader is not present]
+2023-07-06 12:24:47,994 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 82546 (/Users/ad/IdeaProjects/bidbinding-auction/engine-infrastructure/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-06 12:24:48,013 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-06 12:24:49,912 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-06 12:24:49,920 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-06 12:24:49,921 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-06 12:24:49,921 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-06 12:24:49,993 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-06 12:24:49,994 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1917 ms
+2023-07-06 12:24:50,670 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-06 12:24:50,720 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-06 12:24:50,738 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-06 12:24:50,753 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 3.191 seconds (process running for 4.029)
+2023-07-06 12:24:51,207 INFO [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-06 12:24:51,207 INFO [RMI TCP Connection(3)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-06 12:24:51,209 INFO [RMI TCP Connection(3)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
+2023-07-06 12:24:58,592 WARN [http-nio-8081-exec-2] o.s.w.s.m.s.DefaultHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'Correlation-Id' for method parameter type String is not present]
+2023-07-06 13:14:14,191 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 82689 (/Users/ad/IdeaProjects/bidbinding-auction/engine-infrastructure/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-06 13:14:14,199 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-06 13:14:15,595 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-06 13:14:15,604 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-06 13:14:15,606 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-06 13:14:15,606 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-06 13:14:15,687 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-06 13:14:15,688 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1423 ms
+2023-07-06 13:14:16,477 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-06 13:14:16,514 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-06 13:14:16,529 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-06 13:14:16,543 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.752 seconds (process running for 3.924)
+2023-07-06 13:14:17,077 INFO [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-06 13:14:17,078 INFO [RMI TCP Connection(1)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-06 13:14:17,080 INFO [RMI TCP Connection(1)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 2 ms
+2023-07-06 13:22:36,833 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 82745 (/Users/ad/IdeaProjects/bidbinding-auction/engine-infrastructure/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-06 13:22:36,837 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-06 13:22:38,014 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-06 13:22:38,035 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-06 13:22:38,037 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-06 13:22:38,037 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-06 13:22:38,129 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-06 13:22:38,130 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1237 ms
+2023-07-06 13:22:38,711 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-06 13:22:38,752 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-06 13:22:38,768 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-06 13:22:38,782 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.409 seconds (process running for 3.186)
+2023-07-06 13:22:38,980 INFO [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-06 13:22:38,981 INFO [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-06 13:22:38,985 INFO [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 2 ms
+2023-07-06 13:22:54,412 ERROR [http-nio-8081-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class com.bidbinding.auction.engine.application.port.driver.dto.BidDto]] with root cause
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.bidbinding.auction.engine.application.port.driver.dto.BidDto` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 2, column: 2]
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1915)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:414)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1360)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1424)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:352)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:185)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:2105)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1481)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:395)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:354)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:183)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:163)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:136)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:181)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:148)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-06 13:23:35,225 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 82759 (/Users/ad/IdeaProjects/bidbinding-auction/engine-infrastructure/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-06 13:23:35,229 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-06 13:23:36,607 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-06 13:23:36,616 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-06 13:23:36,618 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-06 13:23:36,618 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-06 13:23:36,696 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-06 13:23:36,697 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1416 ms
+2023-07-06 13:23:37,275 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-06 13:23:37,310 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-06 13:23:37,325 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-06 13:23:37,339 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.491 seconds (process running for 3.111)
+2023-07-06 13:23:37,584 INFO [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-06 13:23:37,584 INFO [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-06 13:23:37,586 INFO [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
+2023-07-06 13:48:31,001 INFO [background-preinit] o.h.v.i.u.Version [Version.java:21] HV000001: Hibernate Validator 8.0.0.Final
+2023-07-06 13:48:31,034 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 82957 (/Users/ad/IdeaProjects/bidbinding-auction/engine-infrastructure/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-06 13:48:31,036 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-06 13:48:32,401 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-06 13:48:32,417 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-06 13:48:32,418 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-06 13:48:32,419 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-06 13:48:32,498 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-06 13:48:32,498 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1422 ms
+2023-07-06 13:48:33,058 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-06 13:48:33,097 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-06 13:48:33,117 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-06 13:48:33,133 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.546 seconds (process running for 3.579)
+2023-07-06 13:48:33,476 INFO [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-06 13:48:33,476 INFO [RMI TCP Connection(3)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-06 13:48:33,478 INFO [RMI TCP Connection(3)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
+2023-07-06 13:52:44,336 INFO [background-preinit] o.h.v.i.u.Version [Version.java:21] HV000001: Hibernate Validator 8.0.0.Final
+2023-07-06 13:52:44,376 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 82990 (/Users/ad/IdeaProjects/bidbinding-auction/engine-infrastructure/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
+2023-07-06 13:52:44,377 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2023-07-06 13:52:45,597 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2023-07-06 13:52:45,612 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-06 13:52:45,614 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-07-06 13:52:45,614 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-06 13:52:45,693 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-07-06 13:52:45,693 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1249 ms
+2023-07-06 13:52:46,286 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-06 13:52:46,326 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-06 13:52:46,342 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-06 13:52:46,357 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:57] Started BidBindingApplication in 2.317 seconds (process running for 3.128)
+2023-07-06 13:52:46,632 INFO [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-06 13:52:46,632 INFO [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-07-06 13:52:46,633 INFO [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
