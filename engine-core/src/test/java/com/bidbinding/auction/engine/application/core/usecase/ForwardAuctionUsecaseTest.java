@@ -18,8 +18,6 @@ import java.util.ArrayList;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class ForwardAuctionUsecaseTest {
 
 

@@ -5,10 +5,6 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
-import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.List;
-
 @Entity(name = "item_forward")
 @Table(name = "item_forward")
 @Data

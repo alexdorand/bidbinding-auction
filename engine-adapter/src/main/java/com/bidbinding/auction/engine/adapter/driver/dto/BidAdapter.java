@@ -3,7 +3,6 @@ package com.bidbinding.auction.engine.adapter.driver.dto;
 import com.bidbinding.auction.engine.application.core.model.bid.Bid;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;

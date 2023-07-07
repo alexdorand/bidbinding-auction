@@ -7,16 +7,11 @@ import com.bidbinding.auction.engine.application.core.model.bid.ItemBidCommand;
 import com.bidbinding.auction.engine.application.core.model.bid.PlaceBidResult;
 import com.bidbinding.auction.engine.application.core.usecase.PlaceBidUsecase;
 import com.bidbinding.auction.engine.application.port.driver.PlaceBidPort;
-import jakarta.validation.ConstraintViolation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.Set;
-
-import static jakarta.validation.Validation.buildDefaultValidatorFactory;
 
 @RestController
 public class PlaceBidAdapter implements PlaceBidPort {

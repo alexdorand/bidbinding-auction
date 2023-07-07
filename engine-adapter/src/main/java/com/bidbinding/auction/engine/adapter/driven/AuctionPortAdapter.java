@@ -2,7 +2,6 @@ package com.bidbinding.auction.engine.adapter.driven;
 
 import com.bidbinding.auction.engine.adapter.driven.dto.Bid;
 import com.bidbinding.auction.engine.adapter.driven.dto.ItemForward;
-import com.bidbinding.auction.engine.adapter.driven.service.AuctionRepository;
 import com.bidbinding.auction.engine.adapter.driven.service.BidRepository;
 import com.bidbinding.auction.engine.adapter.driven.service.ItemRepository;
 import com.bidbinding.auction.engine.adapter.driver.dto.BidAdapter;
@@ -11,14 +10,10 @@ import com.bidbinding.auction.engine.application.core.model.item.ForwardAuctionI
 import com.bidbinding.auction.engine.application.core.model.item.ItemBiddingType;
 import com.bidbinding.auction.engine.application.port.driven.AuctionPort;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.UUID;
-import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
 @Component
