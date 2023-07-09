@@ -73,7 +73,7 @@ class ForwardAuctionUsecaseTest {
         }
 
         @ParameterizedTest(name = "Bid {0} is placed.")
-        @ValueSource(ints = { 2016, 2020, 2048 })
+        @ValueSource(ints = {2016, 2020, 2048})
         void if_bid_is_success_full_at(int year) {
         }
 

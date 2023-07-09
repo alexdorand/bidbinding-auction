@@ -12,7 +12,7 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Adaptor {
 
-  @AliasFor(annotation = Component.class)
-  String value() default "";
+    @AliasFor(annotation = Component.class)
+    String value() default "";
 
 }

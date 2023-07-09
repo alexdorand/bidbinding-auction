@@ -12,15 +12,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
-import com.bidbinding.auction.engine.adapter.common.driver.RestAdapterFunctions;
 
 import static com.bidbinding.auction.engine.adapter.common.driver.RestAdapterFunctions.status;
 import static com.bidbinding.auction.engine.adapter.driver.dto.BidPlacementAdapter.toBid;
-import static org.springframework.http.MediaType.*;
+import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 
 @RestController
-public class PlaceBidAdapter implements PlaceBidPort  {
+public class PlaceBidAdapter implements PlaceBidPort {
 
     @Autowired
     private PlaceBidUsecase placeBidUsecase;
@@ -35,10 +34,10 @@ public class PlaceBidAdapter implements PlaceBidPort  {
     public ResponseEntity<BidPlacementResponse> placeBidExpand(@RequestBody BidPlacementRequest bidPlacementRequest,
                                                                @RequestHeader(value = "Correlation-Id", required = false) String correlationId) {
 
-            BidPlacementStatus placeBidResult = placeBid(new ItemBidCommand(toBid(bidPlacementRequest), bidPlacementRequest.itemId()));
-            BidPlacementResponse response = new BidPlacementResponse(placeBidResult);
-            return new ResponseEntity<>(response, status.apply(placeBidResult));
+        BidPlacementStatus placeBidResult = placeBid(new ItemBidCommand(toBid(bidPlacementRequest), bidPlacementRequest.itemId()));
+        BidPlacementResponse response = new BidPlacementResponse(placeBidResult);
+        return new ResponseEntity<>(response, status.apply(placeBidResult));
 
-        }
+    }
 
 }

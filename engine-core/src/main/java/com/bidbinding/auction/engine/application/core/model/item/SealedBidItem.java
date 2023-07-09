@@ -5,10 +5,6 @@ import com.bidbinding.auction.engine.application.core.model.bid.BidPlacementStat
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-import java.math.BigDecimal;
-import java.util.List;
-import java.util.Map;
-
 @Getter
 @AllArgsConstructor
 public final class SealedBidItem implements Item {

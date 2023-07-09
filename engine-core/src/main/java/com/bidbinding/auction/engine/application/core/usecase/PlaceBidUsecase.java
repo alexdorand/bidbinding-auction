@@ -1,8 +1,8 @@
 package com.bidbinding.auction.engine.application.core.usecase;
 
 import com.bidbinding.auction.engine.application.core.common.UseCase;
-import com.bidbinding.auction.engine.application.core.model.bid.ItemBidCommand;
 import com.bidbinding.auction.engine.application.core.model.bid.BidPlacementStatus;
+import com.bidbinding.auction.engine.application.core.model.bid.ItemBidCommand;
 import com.bidbinding.auction.engine.application.core.model.item.ItemAuctionType;
 import com.bidbinding.auction.engine.application.port.driven.ItemPort;
 import lombok.AllArgsConstructor;

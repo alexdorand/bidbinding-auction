@@ -11,9 +11,9 @@ import java.util.List;
 public interface BidRepository extends CrudRepository<Bid, Long> {
 
     @Query("""
-			select a from bid a 
-			where a.itemId = :item_id 			
-			""")
+            select a from bid a 
+            where a.itemId = :item_id 			
+            """)
     List<Bid> getBidsForItem(
             @Param("item_id") long itemId);
 

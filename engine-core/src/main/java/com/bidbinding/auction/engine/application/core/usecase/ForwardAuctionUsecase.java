@@ -1,12 +1,10 @@
 package com.bidbinding.auction.engine.application.core.usecase;
 
 import com.bidbinding.auction.engine.application.core.model.bid.Bid;
-import com.bidbinding.auction.engine.application.core.model.bid.ItemBidCommand;
 import com.bidbinding.auction.engine.application.core.model.bid.BidPlacementStatus;
+import com.bidbinding.auction.engine.application.core.model.bid.ItemBidCommand;
 import com.bidbinding.auction.engine.application.core.model.fraud.FraudDetectionResult;
 import com.bidbinding.auction.engine.application.core.model.item.ForwardAuctionItem;
-import com.bidbinding.auction.engine.application.port.driven.AuctionPort;
-import com.bidbinding.auction.engine.application.port.driven.EventPort;
 import com.bidbinding.auction.engine.application.port.driven.FraudDetectionPort;
 import com.bidbinding.auction.engine.application.port.driven.ItemPort;
 import lombok.AllArgsConstructor;

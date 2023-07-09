@@ -3,10 +3,11 @@ package com.bidbinding.auction.engine.application.core.model.item;
 import com.bidbinding.auction.engine.application.core.model.bid.Bid;
 import com.bidbinding.auction.engine.application.core.model.bid.BidPlacementStatus;
 import com.bidbinding.auction.engine.application.core.model.bid.BidsHistory;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
 
 import java.math.BigDecimal;
-import java.util.List;
 
 @Getter
 @Builder
@@ -28,20 +29,20 @@ public final class ForwardAuctionItem implements Item {
 
     @Override
     public BidPlacementStatus recordBid(Bid bid) {
-        if(!bid.getBidPlacementStatus().isFraud()) {
-            if(canPlaceBid(bid)) {
+        if (!bid.getBidPlacementStatus().isFraud()) {
+            if (canPlaceBid(bid)) {
                 bid.setBidPlacementStatus(BidPlacementStatus.ACCEPTED);
             } else {
                 bid.setBidPlacementStatus(BidPlacementStatus.REJECTED);
             }
-        } 
+        }
         return bid.getBidPlacementStatus();
     }
 
     @Override
     public void conclude() {
-        if(isAuctionEnded() || isAuctionNotStarted()) {
-            itemAuctionState = ItemAuctionState. CONCLUDED;
+        if (isAuctionEnded() || isAuctionNotStarted()) {
+            itemAuctionState = ItemAuctionState.CONCLUDED;
             this.concludedOn = System.currentTimeMillis();
         }
     }
@@ -74,7 +75,6 @@ public final class ForwardAuctionItem implements Item {
     public boolean isAuctionConcluded() {
         return itemAuctionState == ItemAuctionState.CONCLUDED;
     }
-
 
 
 }

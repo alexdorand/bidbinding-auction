@@ -39,13 +39,13 @@ public class DriverConfiguration {
     }
 
     @Bean
-    ForwardAuctionUsecase forwardAuctionUsecase( FraudDetectionAdapter fraudDetectionPort, ItemPortAdapter itemPort) {
-        return new ForwardAuctionUsecase( fraudDetectionPort, itemPort);
+    ForwardAuctionUsecase forwardAuctionUsecase(FraudDetectionAdapter fraudDetectionPort, ItemPortAdapter itemPort) {
+        return new ForwardAuctionUsecase(fraudDetectionPort, itemPort);
     }
 
     @Bean
     public PlaceBidUsecase placeBidUsecase(ForwardAuctionUsecase forwardAuctionUsecase, SealedBidsUsecase sealedBidsUsecase, ReverseAuctionUsecase reverseAuctionUsecase, ItemPortAdapter itemPortAdapter) {
-        return new PlaceBidUsecase(forwardAuctionUsecase, sealedBidsUsecase,reverseAuctionUsecase, itemPortAdapter);
+        return new PlaceBidUsecase(forwardAuctionUsecase, sealedBidsUsecase, reverseAuctionUsecase, itemPortAdapter);
     }
 
 }

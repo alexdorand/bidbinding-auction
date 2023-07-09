@@ -7,7 +7,4 @@ import lombok.AllArgsConstructor;
 public final class SealedBidsUsecase {
 
 
-
-
-
 }

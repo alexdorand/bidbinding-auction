@@ -31,16 +31,16 @@ class PlaceBidAdapterTest {
     @Test
     void placeBid() throws Exception {
         BidPlacementResponse bidPlacementResponse =
-        om.readValue(mockMvc.perform(
-                MockMvcRequestBuilders.post("/bid")
-                        .contentType("application/json")
-                        .content(
-                                om.writeValueAsString(
-                                        new BidPlacementRequest("bidder", "dsfkgjhqaklgjqkljhafg", BigDecimal.valueOf(12))
-                                )
-                        ))
-                .andDo(MockMvcResultHandlers.print())
-                .andReturn().getResponse().getContentAsString(), BidPlacementResponse.class);
+                om.readValue(mockMvc.perform(
+                                MockMvcRequestBuilders.post("/bid")
+                                        .contentType("application/json")
+                                        .content(
+                                                om.writeValueAsString(
+                                                        new BidPlacementRequest("bidder", "dsfkgjhqaklgjqkljhafg", BigDecimal.valueOf(12))
+                                                )
+                                        ))
+                        .andDo(MockMvcResultHandlers.print())
+                        .andReturn().getResponse().getContentAsString(), BidPlacementResponse.class);
         System.out.println(bidPlacementResponse.getStatus());
     }
 }

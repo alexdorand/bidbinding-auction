@@ -1,8 +1,8 @@
 package com.bidbinding.auction.engine.adapter.driven;
 
-import com.bidbinding.auction.engine.adapter.driven.service.FraudDetectionService;
 import com.bidbinding.auction.engine.adapter.driven.dto.BidFraudAdaptor;
 import com.bidbinding.auction.engine.adapter.driven.dto.BidFraudDto;
+import com.bidbinding.auction.engine.adapter.driven.service.FraudDetectionService;
 import com.bidbinding.auction.engine.application.core.model.bid.Bid;
 import com.bidbinding.auction.engine.application.core.model.bid.ItemBidCommand;
 import com.bidbinding.auction.engine.application.core.model.fraud.FraudDetectionResult;
@@ -23,7 +23,7 @@ public class FraudDetectionAdapter implements FraudDetectionPort {
         BidFraudDto bidToValidate = BidFraudAdaptor.dtoFrom(itemBidCommand.bid());
         bidToValidate.setOnItemId(itemBidCommand.onItemId());
         List<FraudDetectionResult> fraudDetectionResults = fraudDetectionService.detectFraud(bidToValidate);
-        if(fraudDetectionResults.isEmpty()) {
+        if (fraudDetectionResults.isEmpty()) {
             return Optional.empty();
         }
         return Optional.of(fraudDetectionResults);
