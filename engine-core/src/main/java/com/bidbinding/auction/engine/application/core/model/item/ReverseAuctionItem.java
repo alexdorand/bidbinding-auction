@@ -16,7 +16,27 @@ public final class ReverseAuctionItem implements Item {
     }
 
     @Override
+    public void cancel() {
+
+    }
+
+    @Override
     public void conclude() {
 
+    }
+
+    @Override
+    public boolean isAuctionEnded() {
+        return false;
+    }
+
+    @Override
+    public boolean isAuctionNotStarted() {
+        return false;
+    }
+
+    @Override
+    public boolean isAuctionConcluded() {
+        return false;
     }
 }

@@ -6511,3 +6511,6 @@ java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.app
 2023-07-09 11:07:15,241 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:804] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m40s207ms).
 2023-07-09 11:20:24,470 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:804] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m9s185ms).
 2023-07-09 11:34:46,138 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:804] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m21s668ms).
+2023-07-09 12:00:35,221 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-09 12:00:35,243 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-07-09 12:00:35,254 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
