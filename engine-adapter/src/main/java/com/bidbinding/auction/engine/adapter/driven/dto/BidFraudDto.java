@@ -1,4 +1,4 @@
-package com.bidbinding.auction.engine.adapter.driver.dto;
+package com.bidbinding.auction.engine.adapter.driven.dto;
 
 import com.bidbinding.auction.engine.application.core.model.bid.Bid;
 import lombok.Data;

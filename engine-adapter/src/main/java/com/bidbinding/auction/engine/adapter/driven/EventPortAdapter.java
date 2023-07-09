@@ -8,32 +8,32 @@ import org.springframework.stereotype.Component;
 public class EventPortAdapter implements EventPort {
 
     @Override
-    public void notifyBidPlaced(BidNotificationCommand bidNotificationCommand) {
+    public void bidPlacedSuccessfully(BidNotificationCommand bidNotificationCommand) {
         System.out.println("EVENT: Bid is placed");
     }
 
     @Override
-    public void notifyFraudulentBidDetected(BidNotificationCommand bidNotificationCommand) {
+    public void fraudulentBidDetected(BidNotificationCommand bidNotificationCommand) {
         System.out.println("EVENT: Fraud detected");
     }
 
     @Override
-    public void notifyItemConcluded(String itemId) {
+    public void itemConcluded(String itemId) {
         System.out.println("EVENT: Auction concluded");
     }
 
     @Override
-    public void notifyItemWon(String itemId) {
+    public void itemWon(String itemId) {
         System.out.println("EVENT: Item won");
     }
 
     @Override
-    public void notifyItemReserveNotMet(String itemId) {
+    public void itemReserveNotMet(String itemId) {
         System.out.println("EVENT: Item reserved price not met");
     }
 
     @Override
-    public void notifyBidFailed(BidNotificationCommand bidNotificationCommand) {
+    public void bidFailed(BidNotificationCommand bidNotificationCommand) {
         System.out.println("EVENT: Bid failed");
     }
 

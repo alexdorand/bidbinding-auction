@@ -1,6 +1,5 @@
-package com.bidbinding.auction.engine.adapter.driver.dto;
+package com.bidbinding.auction.engine.adapter.driven.dto;
 
-import com.bidbinding.auction.engine.adapter.driven.dto.ItemForward;
 import com.bidbinding.auction.engine.application.core.model.item.ForwardAuctionItem;
 import com.bidbinding.auction.engine.application.core.model.item.ReverseAuctionItem;
 

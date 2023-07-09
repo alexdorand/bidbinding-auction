@@ -1,55 +1,66 @@
 package com.bidbinding.auction.engine.application.core.model.item;
 
 import com.bidbinding.auction.engine.application.core.model.bid.Bid;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import com.bidbinding.auction.engine.application.core.model.bid.BidPlacementStatus;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.util.List;
-import java.util.Map;
 
 @Getter
 @Builder
 @AllArgsConstructor
 public final class ForwardAuctionItem implements Item {
 
-    private final String id;
-    @Setter
-    private List<Bid> bids;
-    @Setter
-    private Map<String, Bid> participantsLastBids;
-    @Setter
-    private Bid winningBid;
+    private String id;
+
+    private Bid bid;
+
     private BigDecimal reservedPrice;
-    //private ItemBiddingType type;
+    private long startTimestamp;
+    private long endTimestamp;
 
+    private transient List<Bid> bidsHistory;
+    private transient Bid winningBid;
+    private boolean concluded;
+    private long concludedOn;
 
     @Override
-    public boolean canPlaceBid(Bid bid) {
-        if(winningBid!=null) {
-            if(winningBid.getAmount().doubleValue()<bid.getAmount().doubleValue()) {
-                return true;
+    public BidPlacementStatus recordBid(Bid bid) {
+        if(!bid.getBidPlacementStatus().isFraud()) {
+            if(canPlaceBid(bid)) {
+                bid.setBidPlacementStatus(BidPlacementStatus.ACCEPTED);
+            } else {
+                bid.setBidPlacementStatus(BidPlacementStatus.REJECTED);
             }
-            return false;
-        } else {
-            return true;
         }
+        return bid.getBidPlacementStatus();
     }
 
     @Override
-    public void recordBid(Bid bid) {
-        bids.forEach(Bid::decreaseRankValue);
-        bid.declareWinner();
-        bids.add(bid);
-        winningBid = bid;
+    public void conclude() {
+        this.concluded = true;
+        this.concludedOn = System.currentTimeMillis();
     }
 
-    @Override
-    public ItemBiddingType getItemBiddingType() {
-        return ItemBiddingType.FORWARD_AUCTION;
+
+    private boolean canPlaceBid(Bid bid) {
+        if (isAuctionNotStarted() || isAuctionEnded()) return false;
+        return isIncomingBidAmountIsLargerThanWinningBid(bid);
     }
+
+    private boolean isIncomingBidAmountIsLargerThanWinningBid(Bid bid) {
+        return winningBid!=null && winningBid.getAmount().doubleValue() < bid.getAmount().doubleValue();
+    }
+
+    private boolean isAuctionEnded() {
+        return endTimestamp < System.currentTimeMillis();
+    }
+
+    private boolean isAuctionNotStarted() {
+        return startTimestamp > System.currentTimeMillis();
+    }
+
 
 
 }

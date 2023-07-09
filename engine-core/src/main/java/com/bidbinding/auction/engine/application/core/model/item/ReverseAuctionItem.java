@@ -1,6 +1,7 @@
 package com.bidbinding.auction.engine.application.core.model.item;
 
 import com.bidbinding.auction.engine.application.core.model.bid.Bid;
+import com.bidbinding.auction.engine.application.core.model.bid.BidPlacementStatus;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
@@ -10,22 +11,12 @@ public final class ReverseAuctionItem implements Item {
 
 
     @Override
-    public boolean canPlaceBid(Bid bid) {
-        return false;
+    public BidPlacementStatus recordBid(Bid bid) {
+        return null;
     }
 
     @Override
-    public void recordBid(Bid bid) {
+    public void conclude() {
 
-    }
-
-
-    public void calculateWinners() {
-
-    }
-
-    @Override
-    public ItemBiddingType getItemBiddingType() {
-        return ItemBiddingType.REVERSE_AUCTION;
     }
 }

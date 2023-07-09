@@ -1,6 +1,7 @@
 package com.bidbinding.auction.engine.application.core.model.item;
 
 import com.bidbinding.auction.engine.application.core.model.bid.Bid;
+import com.bidbinding.auction.engine.application.core.model.bid.BidPlacementStatus;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
@@ -12,29 +13,13 @@ import java.util.Map;
 @AllArgsConstructor
 public final class SealedBidItem implements Item {
 
-    private final String id;
-    private List<Bid> bids;
-    private Map<String, Bid> participantsLastBids;
-    private Bid winningBid;
-    private BigDecimal reservedPrice;
-
-
     @Override
-    public boolean canPlaceBid(Bid bid) {
-        return false;
+    public BidPlacementStatus recordBid(Bid bid) {
+        return null;
     }
 
     @Override
-    public void recordBid(Bid bid) {
+    public void conclude() {
 
-    }
-
-    public void calculateWinners() {
-
-    }
-
-    @Override
-    public ItemBiddingType getItemBiddingType() {
-        return ItemBiddingType.SEALED_BID_AUCTION;
     }
 }

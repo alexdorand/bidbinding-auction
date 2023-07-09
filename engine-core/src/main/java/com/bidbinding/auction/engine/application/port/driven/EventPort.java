@@ -4,12 +4,12 @@ import com.bidbinding.auction.engine.application.core.model.bid.BidNotificationC
 
 public interface EventPort {
 
-    void notifyBidPlaced(BidNotificationCommand bidNotificationCommand);
-    void notifyFraudulentBidDetected(BidNotificationCommand bidNotificationCommand);
-    void notifyItemConcluded(String itemId);
-    void notifyItemWon(String itemId);
-    void notifyItemReserveNotMet(String itemId);
-    void notifyBidFailed(BidNotificationCommand bidNotificationCommand);
+    void bidPlacedSuccessfully(BidNotificationCommand bidNotificationCommand);
+    void fraudulentBidDetected(BidNotificationCommand bidNotificationCommand);
+    void itemConcluded(String itemId);
+    void itemWon(String itemId);
+    void itemReserveNotMet(String itemId);
+    void bidFailed(BidNotificationCommand bidNotificationCommand);
 
 
 }

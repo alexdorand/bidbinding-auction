@@ -1,10 +1,12 @@
 package com.bidbinding.auction.engine.adapter.driven.service;
 
-import com.bidbinding.auction.engine.adapter.driven.dto.FraudType;
-import com.bidbinding.auction.engine.adapter.driver.dto.BidFraudDto;
+import com.bidbinding.auction.engine.adapter.driven.dto.BidFraudDto;
+import com.bidbinding.auction.engine.application.core.model.fraud.FraudDetectionResult;
+
+import java.util.List;
 
 public interface FraudDetectionService {
 
-    FraudType detectFraud(BidFraudDto bid);
+    List<FraudDetectionResult> detectFraud(BidFraudDto bid);
 
 }

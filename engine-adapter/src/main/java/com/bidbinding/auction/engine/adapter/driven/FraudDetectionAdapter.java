@@ -1,36 +1,37 @@
 package com.bidbinding.auction.engine.adapter.driven;
 
-import com.bidbinding.auction.engine.adapter.driven.dto.FraudType;
 import com.bidbinding.auction.engine.adapter.driven.service.FraudDetectionService;
-import com.bidbinding.auction.engine.adapter.driver.dto.BidFraudAdaptor;
-import com.bidbinding.auction.engine.adapter.driver.dto.BidFraudDto;
+import com.bidbinding.auction.engine.adapter.driven.dto.BidFraudAdaptor;
+import com.bidbinding.auction.engine.adapter.driven.dto.BidFraudDto;
+import com.bidbinding.auction.engine.application.core.model.bid.Bid;
 import com.bidbinding.auction.engine.application.core.model.bid.ItemBidCommand;
+import com.bidbinding.auction.engine.application.core.model.fraud.FraudDetectionResult;
 import com.bidbinding.auction.engine.application.port.driven.FraudDetectionPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+import java.util.Optional;
+
 @Component
 public class FraudDetectionAdapter implements FraudDetectionPort {
-
+    @Autowired
     private FraudDetectionService fraudDetectionService;
 
-    @Autowired
-    public FraudDetectionAdapter(FraudDetectionService fraudDetectionService) {
-        this.fraudDetectionService = fraudDetectionService;
-    }
-
-
     @Override
-    public boolean isBidFraudulent(ItemBidCommand itemBidCommand) {
+    public Optional<List<FraudDetectionResult>> checkFraudProbability(ItemBidCommand itemBidCommand) {
         BidFraudDto bidToValidate = BidFraudAdaptor.dtoFrom(itemBidCommand.bid());
         bidToValidate.setOnItemId(itemBidCommand.onItemId());
-        FraudType fraudType = fraudDetectionService.detectFraud(bidToValidate);
-        System.out.println("Fraud Detection Result: "+fraudType);
-        return fraudType.isFraudDetected();
+        List<FraudDetectionResult> fraudDetectionResults = fraudDetectionService.detectFraud(bidToValidate);
+        if(fraudDetectionResults.isEmpty()) {
+            return Optional.empty();
+        }
+        return Optional.of(fraudDetectionResults);
     }
 
     @Override
-    public void reportSuspectedFraud(String bid) {
-        System.out.println("report suspected fraud");
+    public void reportSuspectedFraud(String itemId, Bid bid, List<FraudDetectionResult> fraudDetectionResults) {
+
     }
+
 }

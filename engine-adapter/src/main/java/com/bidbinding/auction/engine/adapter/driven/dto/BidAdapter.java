@@ -1,5 +1,6 @@
-package com.bidbinding.auction.engine.adapter.driver.dto;
+package com.bidbinding.auction.engine.adapter.driven.dto;
 
+import com.bidbinding.auction.engine.adapter.driver.dto.BidPlacementRequest;
 import com.bidbinding.auction.engine.application.core.model.bid.Bid;
 
 import java.math.BigDecimal;
@@ -17,11 +18,11 @@ public final class BidAdapter {
                 .build();
     }
 
-    public static Bid adapt(BidDto dto) {
+    public static Bid adapt(BidPlacementRequest bidPlacementRequest) {
         return Bid.builder()
                 .id(UUID.randomUUID().toString())
-                .buyer(dto.getBidder())
-                .amount(dto.getAmount())
+                .buyer(bidPlacementRequest.bidder())
+                .amount(bidPlacementRequest.amount())
                 .build();
     }
 
