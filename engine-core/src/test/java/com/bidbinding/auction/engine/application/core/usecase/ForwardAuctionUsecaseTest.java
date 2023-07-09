@@ -1,9 +1,7 @@
 package com.bidbinding.auction.engine.application.core.usecase;
 
 import com.bidbinding.auction.engine.application.core.model.bid.Bid;
-import com.bidbinding.auction.engine.application.core.model.bid.ItemBidCommand;
 import com.bidbinding.auction.engine.application.core.model.item.ForwardAuctionItem;
-import com.bidbinding.auction.engine.application.core.model.item.AuctionType;
 import com.bidbinding.auction.engine.application.port.driven.AuctionPort;
 import com.bidbinding.auction.engine.application.port.driven.EventPort;
 import com.bidbinding.auction.engine.application.port.driven.FraudDetectionPort;
@@ -14,9 +12,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 import org.mockito.Mockito;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.UUID;
-import java.util.concurrent.ConcurrentHashMap;
 
 class ForwardAuctionUsecaseTest {
 

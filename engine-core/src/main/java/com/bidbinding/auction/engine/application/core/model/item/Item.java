@@ -8,7 +8,13 @@ public sealed interface Item permits ForwardAuctionItem, ReverseAuctionItem, Sea
 
     BidPlacementStatus recordBid(Bid bid);
 
+    void cancel();
+
     void conclude();
 
+    boolean isAuctionEnded();
 
+    boolean isAuctionNotStarted();
+
+    boolean isAuctionConcluded();
 }

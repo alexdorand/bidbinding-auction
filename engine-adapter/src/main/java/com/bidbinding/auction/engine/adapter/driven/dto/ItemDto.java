@@ -1,12 +1,12 @@
 package com.bidbinding.auction.engine.adapter.driven.dto;
 
-import com.bidbinding.auction.engine.application.core.model.item.AuctionType;
+import com.bidbinding.auction.engine.application.core.model.item.ItemAuctionType;
 import lombok.Data;
 
 @Data
 public class ItemDto {
 
-    private AuctionType itemBiddingType;
+    private ItemAuctionType itemBiddingType;
     private String id;
 
 

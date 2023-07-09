@@ -6502,3 +6502,12 @@ java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.app
 2023-07-09 02:47:21,106 INFO [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-07-09 02:47:21,106 INFO [RMI TCP Connection(1)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
 2023-07-09 02:47:21,108 INFO [RMI TCP Connection(1)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 2 ms
+2023-07-09 04:00:32,195 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:804] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h10m43s822ms).
+2023-07-09 08:00:32,510 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:804] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h530ms).
+2023-07-09 09:00:28,867 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:804] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59m26s340ms).
+2023-07-09 09:35:42,721 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:804] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=35m13s854ms).
+2023-07-09 10:06:44,805 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:804] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m2s84ms).
+2023-07-09 10:47:34,969 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:804] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=40m50s164ms).
+2023-07-09 11:07:15,241 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:804] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m40s207ms).
+2023-07-09 11:20:24,470 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:804] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m9s185ms).
+2023-07-09 11:34:46,138 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:804] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m21s668ms).

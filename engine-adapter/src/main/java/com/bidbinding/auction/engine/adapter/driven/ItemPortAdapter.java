@@ -1,7 +1,7 @@
 package com.bidbinding.auction.engine.adapter.driven;
 
 import com.bidbinding.auction.engine.adapter.common.Adaptor;
-import com.bidbinding.auction.engine.application.core.model.item.AuctionType;
+import com.bidbinding.auction.engine.application.core.model.item.ItemAuctionType;
 import com.bidbinding.auction.engine.application.core.model.item.ForwardAuctionItem;
 import com.bidbinding.auction.engine.application.port.driven.ItemPort;
 
@@ -11,8 +11,8 @@ import java.util.UUID;
 @Adaptor
 public class ItemPortAdapter implements ItemPort<ForwardAuctionItem> {
     @Override
-    public AuctionType getListingTypeFor(String itemId) {
-        return AuctionType.FORWARD_AUCTION;
+    public ItemAuctionType getListingTypeFor(String itemId) {
+        return ItemAuctionType.FORWARD_AUCTION;
     }
 
     @Override

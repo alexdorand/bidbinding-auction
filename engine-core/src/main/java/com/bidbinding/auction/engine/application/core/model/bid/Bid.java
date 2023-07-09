@@ -15,7 +15,7 @@ public class Bid {
     private String id;
     private BigDecimal amount;
     private String buyer;
-    private BidPlacementStatus bidPlacementStatus = BidPlacementStatus.PENDING;
+    private BidPlacementStatus bidPlacementStatus;
     private List<FraudDetectionResult> fraudDetectionResults;
 
     public void markAsFraud(List<FraudDetectionResult> fraudDetectionResults) {

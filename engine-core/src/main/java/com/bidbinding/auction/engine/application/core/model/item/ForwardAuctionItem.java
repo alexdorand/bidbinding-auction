@@ -2,6 +2,7 @@ package com.bidbinding.auction.engine.application.core.model.item;
 
 import com.bidbinding.auction.engine.application.core.model.bid.Bid;
 import com.bidbinding.auction.engine.application.core.model.bid.BidPlacementStatus;
+import com.bidbinding.auction.engine.application.core.model.bid.BidsHistory;
 import lombok.*;
 
 import java.math.BigDecimal;
@@ -20,10 +21,10 @@ public final class ForwardAuctionItem implements Item {
     private long startTimestamp;
     private long endTimestamp;
 
-    private transient List<Bid> bidsHistory;
-    private transient Bid winningBid;
-    private boolean concluded;
+    private ItemAuctionState itemAuctionState;
     private long concludedOn;
+
+    private transient BidsHistory bidsHistory;
 
     @Override
     public BidPlacementStatus recordBid(Bid bid) {
@@ -33,32 +34,45 @@ public final class ForwardAuctionItem implements Item {
             } else {
                 bid.setBidPlacementStatus(BidPlacementStatus.REJECTED);
             }
-        }
+        } 
         return bid.getBidPlacementStatus();
     }
 
     @Override
     public void conclude() {
-        this.concluded = true;
-        this.concludedOn = System.currentTimeMillis();
+        if(isAuctionEnded() || isAuctionNotStarted()) {
+            itemAuctionState = ItemAuctionState. CONCLUDED;
+            this.concludedOn = System.currentTimeMillis();
+        }
     }
 
+    @Override
+    public void cancel() {
+        itemAuctionState = ItemAuctionState.CANCELLED;
+    }
 
     private boolean canPlaceBid(Bid bid) {
         if (isAuctionNotStarted() || isAuctionEnded()) return false;
-        return isIncomingBidAmountIsLargerThanWinningBid(bid);
+        return isIncomingBidAmountIsLargerThanCurrentWinningBid(bid);
     }
 
-    private boolean isIncomingBidAmountIsLargerThanWinningBid(Bid bid) {
-        return winningBid!=null && winningBid.getAmount().doubleValue() < bid.getAmount().doubleValue();
+    private boolean isIncomingBidAmountIsLargerThanCurrentWinningBid(Bid bid) {
+        return bidsHistory.isThereAPreviousWinner() && bidsHistory.isWinningBidOutbid(bid.getAmount());
     }
 
-    private boolean isAuctionEnded() {
+    @Override
+    public boolean isAuctionEnded() {
         return endTimestamp < System.currentTimeMillis();
     }
 
-    private boolean isAuctionNotStarted() {
+    @Override
+    public boolean isAuctionNotStarted() {
         return startTimestamp > System.currentTimeMillis();
+    }
+
+    @Override
+    public boolean isAuctionConcluded() {
+        return itemAuctionState == ItemAuctionState.CONCLUDED;
     }
 
 
