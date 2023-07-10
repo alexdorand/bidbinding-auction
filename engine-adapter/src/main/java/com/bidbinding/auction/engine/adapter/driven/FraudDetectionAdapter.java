@@ -19,14 +19,14 @@ public class FraudDetectionAdapter implements FraudDetectionPort {
     private FraudDetectionService fraudDetectionService;
 
     @Override
-    public Optional<List<FraudDetectionResult>> checkFraudProbability(ItemBidCommand itemBidCommand) {
-        BidFraudDto bidToValidate = BidFraudAdaptor.dtoFrom(itemBidCommand.bid());
-        bidToValidate.setOnItemId(itemBidCommand.onItemId());
-        List<FraudDetectionResult> fraudDetectionResults = fraudDetectionService.detectFraud(bidToValidate);
-        if (fraudDetectionResults.isEmpty()) {
+    public Optional<FraudDetectionResult> checkFraudProbability(ItemBidCommand itemBidCommand) {
+        BidFraudDto bidToDetectFraud = BidFraudAdaptor.dtoFrom(itemBidCommand.bid());
+        bidToDetectFraud.setOnItemId(itemBidCommand.onItemId());
+        FraudDetectionResult fraudDetectionResult = fraudDetectionService.detectFraud(bidToDetectFraud);
+        if (fraudDetectionResult == null) {
             return Optional.empty();
         }
-        return Optional.of(fraudDetectionResults);
+        return Optional.of(fraudDetectionResult);
     }
 
     @Override

@@ -1,4 +1,4 @@
 package com.bidbinding.auction.engine.application.core.model.bid;
 
-public record BidNotificationCommand(Bid bid, String onItemId) {
+public record BidNotification(Bid bid, String onItemId) {
 }

@@ -1,21 +1,13 @@
 package com.bidbinding.auction.engine.adapter.driven;
 
-import com.bidbinding.auction.engine.application.core.model.bid.BidNotificationCommand;
+import com.bidbinding.auction.engine.application.core.model.bid.Bid;
+import com.bidbinding.auction.engine.application.core.model.bid.BidNotification;
 import com.bidbinding.auction.engine.application.port.driven.EventPort;
 import org.springframework.stereotype.Component;
 
 @Component
 public class EventPortAdapter implements EventPort {
 
-    @Override
-    public void bidPlacedSuccessfully(BidNotificationCommand bidNotificationCommand) {
-        System.out.println("EVENT: Bid is placed");
-    }
-
-    @Override
-    public void fraudulentBidDetected(BidNotificationCommand bidNotificationCommand) {
-        System.out.println("EVENT: Fraud detected");
-    }
 
     @Override
     public void itemConcluded(String itemId) {
@@ -33,8 +25,13 @@ public class EventPortAdapter implements EventPort {
     }
 
     @Override
-    public void bidFailed(BidNotificationCommand bidNotificationCommand) {
+    public void bidFailed(BidNotification bidNotificationCommand) {
         System.out.println("EVENT: Bid failed");
+    }
+
+    @Override
+    public void bidPlaced(Bid bid) {
+        System.out.println("EVENT: bid placed: bid id = "+bid.getId());
     }
 
 

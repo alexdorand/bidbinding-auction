@@ -11,6 +11,11 @@ public final class ReverseAuctionItem implements Item {
 
 
     @Override
+    public String getTenantId() {
+        return null;
+    }
+
+    @Override
     public BidPlacementStatus recordBid(Bid bid) {
         return null;
     }

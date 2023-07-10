@@ -15,6 +15,7 @@ import java.math.BigDecimal;
 public final class ForwardAuctionItem implements Item {
 
     private String id;
+    private String tenantId;
 
     private Bid bid;
 
@@ -27,6 +28,10 @@ public final class ForwardAuctionItem implements Item {
 
     private transient BidsHistory bidsHistory;
 
+    public void storeForTenant(String tenantId) {
+        this.tenantId = tenantId;
+    }
+
     @Override
     public BidPlacementStatus recordBid(Bid bid) {
         if (!bid.getBidPlacementStatus().isFraud()) {
@@ -36,6 +41,7 @@ public final class ForwardAuctionItem implements Item {
                 bid.setBidPlacementStatus(BidPlacementStatus.REJECTED);
             }
         }
+        this.bid = bid;
         return bid.getBidPlacementStatus();
     }
 
@@ -54,6 +60,7 @@ public final class ForwardAuctionItem implements Item {
 
     private boolean canPlaceBid(Bid bid) {
         if (isAuctionNotStarted() || isAuctionEnded()) return false;
+        if (bidsHistory.bidderAttemptedFraudOnThisItemAlready(bid.getBuyer())) return false;
         return isIncomingBidAmountIsLargerThanCurrentWinningBid(bid);
     }
 

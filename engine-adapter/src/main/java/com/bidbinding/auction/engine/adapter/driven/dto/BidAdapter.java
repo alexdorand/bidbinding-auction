@@ -21,8 +21,8 @@ public final class BidAdapter {
     public static Bid adapt(BidPlacementRequest bidPlacementRequest) {
         return Bid.builder()
                 .id(UUID.randomUUID().toString())
-                .buyer(bidPlacementRequest.bidder())
-                .amount(bidPlacementRequest.amount())
+                .buyer(bidPlacementRequest.getBidder())
+                .amount(bidPlacementRequest.getAmount())
                 .build();
     }
 

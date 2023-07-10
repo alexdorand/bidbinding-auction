@@ -6,6 +6,8 @@ import com.bidbinding.auction.engine.application.core.model.bid.BidPlacementStat
 
 public sealed interface Item permits ForwardAuctionItem, ReverseAuctionItem, SealedBidItem {
 
+    String getTenantId();
+
     BidPlacementStatus recordBid(Bid bid);
 
     void cancel();

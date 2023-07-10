@@ -5,13 +5,13 @@ import com.bidbinding.auction.engine.application.core.model.bid.BidPlacementStat
 
 import java.util.UUID;
 
-public class BidPlacementAdapter {
+public class BidPlacementConverter {
 
     public static Bid toBid(BidPlacementRequest request) {
         return Bid.builder()
                 .id(UUID.randomUUID().toString())
-                .buyer(request.bidder())
-                .amount(request.amount())
+                .buyer(request.getBidder())
+                .amount(request.getAmount())
                 .bidPlacementStatus(BidPlacementStatus.PENDING)
                 .build();
     }

@@ -1,12 +1,10 @@
 package com.bidbinding.auction.engine.application.port.driven;
 
-import com.bidbinding.auction.engine.application.core.model.bid.BidNotificationCommand;
+import com.bidbinding.auction.engine.application.core.model.bid.Bid;
+import com.bidbinding.auction.engine.application.core.model.bid.BidNotification;
 
 public interface EventPort {
 
-    void bidPlacedSuccessfully(BidNotificationCommand bidNotificationCommand);
-
-    void fraudulentBidDetected(BidNotificationCommand bidNotificationCommand);
 
     void itemConcluded(String itemId);
 
@@ -14,7 +12,7 @@ public interface EventPort {
 
     void itemReserveNotMet(String itemId);
 
-    void bidFailed(BidNotificationCommand bidNotificationCommand);
+    void bidFailed(BidNotification bidNotificationCommand);
 
-
+    void bidPlaced(Bid bid);
 }

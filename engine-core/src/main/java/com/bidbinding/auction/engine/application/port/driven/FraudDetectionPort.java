@@ -10,7 +10,7 @@ import java.util.Optional;
 
 public interface FraudDetectionPort {
 
-    Optional<List<FraudDetectionResult>> checkFraudProbability(ItemBidCommand itemBidCommand);
+    Optional<FraudDetectionResult> checkFraudProbability(ItemBidCommand itemBidCommand);
 
     void reportSuspectedFraud(String itemId, Bid bid, List<FraudDetectionResult> fraudDetectionResults);
 

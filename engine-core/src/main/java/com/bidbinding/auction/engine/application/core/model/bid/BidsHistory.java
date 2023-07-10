@@ -18,6 +18,10 @@ public class BidsHistory {
     private Map<String, String> detectedFraudulentBids;
     private Bid winningBid;
 
+    public boolean bidderAttemptedFraudOnThisItemAlready(String bidder) {
+        return detectedFraudulentBids != null && detectedFraudulentBids.keySet().contains(bidder);
+    }
+
     public boolean isThereAPreviousWinner() {
         return winningBid != null;
     }

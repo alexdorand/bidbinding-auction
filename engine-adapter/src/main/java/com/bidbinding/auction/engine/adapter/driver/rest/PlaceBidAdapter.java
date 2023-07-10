@@ -6,18 +6,21 @@ import com.bidbinding.auction.engine.application.core.model.bid.BidPlacementStat
 import com.bidbinding.auction.engine.application.core.model.bid.ItemBidCommand;
 import com.bidbinding.auction.engine.application.core.usecase.PlaceBidUsecase;
 import com.bidbinding.auction.engine.application.port.driver.PlaceBidPort;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
 
 import static com.bidbinding.auction.engine.adapter.common.driver.RestAdapterFunctions.status;
-import static com.bidbinding.auction.engine.adapter.driver.dto.BidPlacementAdapter.toBid;
+import static com.bidbinding.auction.engine.adapter.driver.dto.BidPlacementConverter.toBid;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 
+@Validated
 @RestController
 public class PlaceBidAdapter implements PlaceBidPort {
 
@@ -31,10 +34,10 @@ public class PlaceBidAdapter implements PlaceBidPort {
 
 
     @PostMapping(value = "/bid", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
-    public ResponseEntity<BidPlacementResponse> placeBidExpand(@RequestBody BidPlacementRequest bidPlacementRequest,
+    public ResponseEntity<BidPlacementResponse> placeBidExpand(@RequestBody @Valid BidPlacementRequest bidPlacementRequest,
                                                                @RequestHeader(value = "Correlation-Id", required = false) String correlationId) {
 
-        BidPlacementStatus placeBidResult = placeBid(new ItemBidCommand(toBid(bidPlacementRequest), bidPlacementRequest.itemId()));
+        BidPlacementStatus placeBidResult = placeBid(new ItemBidCommand(toBid(bidPlacementRequest), bidPlacementRequest.getItemId()));
         BidPlacementResponse response = new BidPlacementResponse(placeBidResult);
         return new ResponseEntity<>(response, status.apply(placeBidResult));
 

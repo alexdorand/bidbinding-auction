@@ -2,10 +2,7 @@ package com.bidbinding.auction.engine.application.core.usecase;
 
 import com.bidbinding.auction.engine.application.core.model.bid.Bid;
 import com.bidbinding.auction.engine.application.core.model.item.ForwardAuctionItem;
-import com.bidbinding.auction.engine.application.port.driven.AuctionPort;
-import com.bidbinding.auction.engine.application.port.driven.EventPort;
-import com.bidbinding.auction.engine.application.port.driven.FraudDetectionPort;
-import com.bidbinding.auction.engine.application.port.driven.ItemPort;
+import com.bidbinding.auction.engine.application.port.driven.*;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -45,11 +42,12 @@ class ForwardAuctionUsecaseTest {
             AuctionPort auctionPort = Mockito.mock(AuctionPort.class);
             EventPort eventPort = Mockito.mock(EventPort.class);
             FraudDetectionPort fraudDetectionPort = Mockito.mock(FraudDetectionPort.class);
+            TenancyPort tenancyPort = Mockito.mock(TenancyPort.class);
             ItemPort<ForwardAuctionItem> itemItemPort = Mockito.mock(ItemPort.class);
 
-            ForwardAuctionUsecase forwardAuctionUsecase = new ForwardAuctionUsecase(fraudDetectionPort, itemItemPort);
-            ReverseAuctionUsecase reverseAuctionUsecase = Mockito.mock(ReverseAuctionUsecase.class);
-            SealedBidsUsecase sealedBidsUsecase = Mockito.mock(SealedBidsUsecase.class);
+//            ForwardAuctionUsecase forwardAuctionUsecase = new ForwardAuctionUsecase(fraudDetectionPort, itemItemPort,tenancyPort);
+//            ReverseAuctionUsecase reverseAuctionUsecase = Mockito.mock(ReverseAuctionUsecase.class);
+//            SealedBidsUsecase sealedBidsUsecase = Mockito.mock(SealedBidsUsecase.class);
 
 //            ForwardAuctionItem forwardAuctionItem = ForwardAuctionItem.builder()
 //                    .bids(new ArrayList<>())

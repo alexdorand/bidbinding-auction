@@ -10,6 +10,11 @@ import lombok.Getter;
 public final class SealedBidItem implements Item {
 
     @Override
+    public String getTenantId() {
+        return null;
+    }
+
+    @Override
     public BidPlacementStatus recordBid(Bid bid) {
         return null;
     }
