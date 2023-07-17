@@ -30,13 +30,10 @@ public class ItemAdapter implements ItemPort<ForwardAuctionItem> {
         this.timestreamService = timestreamService;
         this.itemMongoDbService = itemMongoDbService;
         this.redisService = redisService;
-        itemBehaviorSubject.subscribe(new Consumer<ForwardAuctionItem>() {
-            @Override
-            public void accept(ForwardAuctionItem item) throws Throwable {
-                timestreamService.asyncRecordImmutableBid(item);
-                itemMongoDbService.asyncWriteItemToDatastore(item);
-                redisService.asyncWriteItemToCache(item);
-            }
+        itemBehaviorSubject.subscribe(item -> {
+            timestreamService.asyncRecordImmutableBid(item);
+            itemMongoDbService.asyncWriteItemToDatastore(item);
+            redisService.asyncWriteItemToCache(item);
         });
     }
 
