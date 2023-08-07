@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.lang.annotation.*;
 
 @Documented
-@Repository
+@Repository // TODO mfguven : Why is this annotation class marked as repository
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface DataAccessAdapter {

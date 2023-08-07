@@ -2,9 +2,7 @@ package com.bidbinding.auction.engine.application.core.model.item;
 
 public enum ItemAuctionType {
 
-    REVERSE_AUCTION,
-    FORWARD_AUCTION,
-    SEALED_BID_AUCTION
-
-
+    REVERSE,
+    FORWARD,
+    SEALED_BID
 }

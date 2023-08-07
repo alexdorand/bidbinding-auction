@@ -56,16 +56,13 @@ public class ItemTimestreamService {
     }
 
     public void concludeItem(ForwardAuctionItem item) {
-
         List<Record> records = new ArrayList<>();
         final long time = System.currentTimeMillis();
 
-        List<Dimension> dimensions = new ArrayList<>();
-        final Dimension itemId = Dimension.builder().name(ITEM_ID).value(item.getId()).build();
-        final Dimension itemState = Dimension.builder().name(ITEM_STATE).value(item.getItemAuctionState().name()).build();
-
-        dimensions.add(itemId);
-        dimensions.add(itemState);
+        List<Dimension> dimensions = List.of(
+                Dimension.builder().name(ITEM_ID).value(item.getId()).build(),
+                Dimension.builder().name(ITEM_STATE).value(item.getItemAuctionState().name()).build()
+        );
 
         Record winner = Record.builder()
                 .dimensions(dimensions)
@@ -80,8 +77,12 @@ public class ItemTimestreamService {
     }
 
     private WriteRecordsResponse writeToTimestream(ForwardAuctionItem item, List<Record> records) {
-        WriteRecordsRequest writeRecordsRequest = WriteRecordsRequest.builder()
-                .databaseName(timestreamConfiguration.getDatabase()+ item.getTenantId()).tableName(timestreamConfiguration.getTable()).records(records).build();
+        WriteRecordsRequest writeRecordsRequest =
+                WriteRecordsRequest.builder()
+                        .databaseName(timestreamConfiguration.getDatabase() + item.getTenantId())
+                        .tableName(timestreamConfiguration.getTable())
+                        .records(records)
+                        .build();
 
         try {
             WriteRecordsResponse writeRecordsResponse = timestreamWriteClient.writeRecords(writeRecordsRequest);

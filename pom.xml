@@ -33,6 +33,13 @@
         <skip.integration.tests>true</skip.integration.tests>
         <version.lombok>1.18.28</version.lombok>
     </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.github.jntakpe</groupId>
+            <artifactId>mongo-reactor-adapter</artifactId>
+            <version>0.3.2</version>
+        </dependency>
+    </dependencies>
 
 
 </project>

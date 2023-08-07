@@ -7,11 +7,12 @@ import lombok.Data;
 
 import java.math.BigDecimal;
 
-
 @Data
 public class BidPlacementRequest {
-        @NotBlank(message = "missing.bidder") String bidder;
-        @NotBlank(message = "midding.item") String itemId;
-        @NotNull(message = "missing.amount") @Money BigDecimal amount;
-
+    @NotBlank(message = "missing.bidder")
+    String bidder;
+    @NotBlank(message = "missing.item")
+    String itemId;
+    @NotNull(message = "missing.amount") @Money
+    BigDecimal amount;
 }

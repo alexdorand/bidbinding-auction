@@ -7,6 +7,7 @@ import java.util.Set;
 
 import static jakarta.validation.Validation.buildDefaultValidatorFactory;
 
+//TODO mfguven : Not sure about this class. No spring annotations.
 public class Validator {
 
     private final static jakarta.validation.Validator validator = buildDefaultValidatorFactory().getValidator();

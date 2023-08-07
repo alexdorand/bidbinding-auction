@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 public class BidFraudDto {
 
-    private Bid bid;
+    private Bid bid; //TODO mfguven : We may be using the wrong type here.
     private String onItemId;
 
 }

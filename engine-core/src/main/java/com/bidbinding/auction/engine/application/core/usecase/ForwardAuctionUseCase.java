@@ -2,8 +2,6 @@ package com.bidbinding.auction.engine.application.core.usecase;
 
 import com.bidbinding.auction.engine.application.core.model.bid.Bid;
 import com.bidbinding.auction.engine.application.core.model.bid.BidPlacementStatus;
-import com.bidbinding.auction.engine.application.core.model.bid.ItemBidCommand;
-import com.bidbinding.auction.engine.application.core.model.fraud.FraudDetectionResult;
 import com.bidbinding.auction.engine.application.core.model.item.ForwardAuctionItem;
 import com.bidbinding.auction.engine.application.port.driven.EventPort;
 import com.bidbinding.auction.engine.application.port.driven.FraudDetectionPort;
@@ -11,11 +9,8 @@ import com.bidbinding.auction.engine.application.port.driven.ItemPort;
 import com.bidbinding.auction.engine.application.port.driven.TenancyPort;
 import lombok.AllArgsConstructor;
 
-import java.util.List;
-import java.util.Optional;
-
 @AllArgsConstructor
-public class ForwardAuctionUsecase {
+public class ForwardAuctionUseCase {
 
     private EventPort eventPort;
     private FraudDetectionPort fraudDetectionPort;

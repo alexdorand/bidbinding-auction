@@ -9,6 +9,6 @@ public class MoneyValidator implements ConstraintValidator<Money, BigDecimal> {
 
     @Override
     public boolean isValid(BigDecimal amount, ConstraintValidatorContext constraintValidatorContext) {
-        return amount!=null && amount.doubleValue() > 0;
+        return amount != null && amount.signum() != -1;
     }
 }
