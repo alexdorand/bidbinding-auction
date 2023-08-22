@@ -7,6 +7,9 @@ public enum BidPlacementStatus {
     REJECTED_DUE_TO_FRAUD;
 
 
+    public boolean isPending() {
+        return this == PENDING;
+    }
     public boolean isAccepted() {
         return this == ACCEPTED;
     }

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import java.lang.annotation.*;
 
 @Documented
-@Service
+@Service // TODO mfguven : Why is this annotation class marked as service
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Adaptor {

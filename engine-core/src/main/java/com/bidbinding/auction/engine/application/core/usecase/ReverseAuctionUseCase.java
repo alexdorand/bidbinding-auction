@@ -1,6 +1,6 @@
 package com.bidbinding.auction.engine.application.core.usecase;
 
-public class ReverseAuctionUsecase {
+public class ReverseAuctionUseCase {
 
 
 }

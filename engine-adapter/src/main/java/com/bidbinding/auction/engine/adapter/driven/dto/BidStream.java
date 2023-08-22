@@ -3,6 +3,8 @@ package com.bidbinding.auction.engine.adapter.driven.dto;
 import lombok.Builder;
 import lombok.Getter;
 
+//TODO mfguven : Un-used class.
+
 @Getter
 @Builder
 public class BidStream {

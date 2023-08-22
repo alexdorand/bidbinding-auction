@@ -6,11 +6,9 @@ import com.bidbinding.auction.engine.application.core.model.item.ForwardAuctionI
 import com.bidbinding.auction.engine.application.core.model.item.ItemAuctionState;
 import com.bidbinding.auction.engine.application.core.model.item.ItemAuctionType;
 import com.bidbinding.auction.engine.application.port.driven.ItemPort;
-import io.reactivex.rxjava3.core.Observable;
-import io.reactivex.rxjava3.functions.Consumer;
 import io.reactivex.rxjava3.subjects.BehaviorSubject;
-import lombok.AllArgsConstructor;
 
+import java.time.Instant;
 import java.util.UUID;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -18,43 +16,49 @@ import java.util.concurrent.Executors;
 @Adaptor
 public class ItemAdapter implements ItemPort<ForwardAuctionItem> {
 
-    private final ItemTimestreamService timestreamService;
-    private final ItemMongoDbService itemMongoDbService;
-    private final ItemRedisService redisService;
+    //TODO mfguven : Why is Adapter a Port?
+    // ItemAdapter should be supporting all auction item types NOT only ForwardAuctionItem
+    // We might nee three separate ItemPort's for each auction type.
 
-    private final BehaviorSubject<ForwardAuctionItem> itemBehaviorSubject = BehaviorSubject.create();
+    private final BehaviorSubject<ForwardAuctionItem> itemBehaviorSubject;
 
-    private ExecutorService threadpool = Executors.newCachedThreadPool();
+    //TODO mfguven : How many of these thread pools do we have?
+    // Should we keep one thread pool per application instance?
+    private final ExecutorService threadPool;
 
-    public ItemAdapter(ItemTimestreamService timestreamService, ItemMongoDbService itemMongoDbService, ItemRedisService redisService) {
-        this.timestreamService = timestreamService;
-        this.itemMongoDbService = itemMongoDbService;
-        this.redisService = redisService;
-        itemBehaviorSubject.subscribe(new Consumer<ForwardAuctionItem>() {
-            @Override
-            public void accept(ForwardAuctionItem item) throws Throwable {
-                timestreamService.asyncRecordImmutableBid(item);
-                itemMongoDbService.asyncWriteItemToDatastore(item);
-                redisService.asyncWriteItemToCache(item);
-            }
+    public ItemAdapter(
+            ItemTimestreamService itemTimestreamService,
+            ItemMongoDbService itemMongoDbService,
+            ItemRedisService itemRedisService
+    ) {
+        this.threadPool = Executors.newCachedThreadPool();
+        this.itemBehaviorSubject = BehaviorSubject.create();
+        this.itemBehaviorSubject.subscribe(item -> {
+            itemTimestreamService.asyncRecordImmutableBid(item);
+            itemMongoDbService.asyncWriteItemToDatastore(item);
+            itemRedisService.asyncWriteItemToCache(item);
         });
     }
 
     @Override
     public ItemAuctionType getListingTypeFor(String itemId) {
-        return ItemAuctionType.FORWARD_AUCTION;
+        return ItemAuctionType.FORWARD;
     }
 
     @Override
     public void updateItem(ForwardAuctionItem item) {
-        threadpool.submit(() -> {
-            itemBehaviorSubject.onNext(item);
-        });
+        threadPool.submit(() -> itemBehaviorSubject.onNext(item));
     }
 
     @Override
     public ForwardAuctionItem getItem(String itemId) {
-        return ForwardAuctionItem.builder().id(UUID.randomUUID().toString()).itemAuctionState(ItemAuctionState.STARTED).bidsHistory(new BidsHistory()).startTimestamp(System.currentTimeMillis()).endTimestamp(System.currentTimeMillis()).build();
+        return ForwardAuctionItem.builder()
+                .id(UUID.randomUUID().toString())
+                .itemAuctionState(ItemAuctionState.STARTED)
+                .bidsHistory(new BidsHistory())
+                .startedAt(Instant.now())
+                .finishedAt(Instant.now())
+                .build();
     }
 
 }

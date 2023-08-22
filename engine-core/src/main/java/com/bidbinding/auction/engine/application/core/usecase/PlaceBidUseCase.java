@@ -9,12 +9,12 @@ import lombok.AllArgsConstructor;
 
 @UseCase
 @AllArgsConstructor
-public class PlaceBidUsecase {
+public class PlaceBidUseCase  {
 
-    private ForwardAuctionUsecase forwardAuctionUsecase;
-    private SealedBidsUsecase sealedBidsUsecase;
-    private ReverseAuctionUsecase reverseAuctionUsecase;
-    private ItemPort itemPort;
+    private ForwardAuctionUseCase forwardAuctionUsecase;
+    private SealedBidsUseCase sealedBidsUsecase;
+    private ReverseAuctionUseCase reverseAuctionUsecase;
+    private ItemPort<?> itemPort;
 
 
     public ItemAuctionType detectAuctionType(String itemId) {
@@ -22,19 +22,11 @@ public class PlaceBidUsecase {
     }
 
     public BidPlacementStatus placeBid(ItemBidCommand itemBidCommand) {
-
         ItemAuctionType type = detectAuctionType(itemBidCommand.onItemId());
-        switch (type) {
-            case FORWARD_AUCTION -> {
-                return forwardAuctionUsecase.placeBid(itemBidCommand.bid(), itemBidCommand.onItemId());
-            }
-            case REVERSE_AUCTION -> {
-
-            }
-            case SEALED_BID_AUCTION -> {
-
-            }
-        }
-        return BidPlacementStatus.REJECTED;
+        return switch (type) {
+            case FORWARD -> forwardAuctionUsecase.placeBid(itemBidCommand.bid(), itemBidCommand.onItemId());
+            case REVERSE -> throw new UnsupportedOperationException("Reverse Auction is not supported");
+            case SEALED_BID -> throw new UnsupportedOperationException("Sealed Bid Auction is not supported");
+        };
     }
 }

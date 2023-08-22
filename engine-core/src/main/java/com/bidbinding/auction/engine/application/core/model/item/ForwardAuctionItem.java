@@ -8,23 +8,25 @@ import lombok.Builder;
 import lombok.Getter;
 
 import java.math.BigDecimal;
+import java.time.Instant;
 
 @Getter
 @Builder
 @AllArgsConstructor
 public final class ForwardAuctionItem implements Item {
 
-    private String id;
+    private final String id;
     private String tenantId;
 
     private Bid bid;
 
-    private BigDecimal reservedPrice;
-    private long startTimestamp;
-    private long endTimestamp;
+    //TODO mfguven : When is this field set and where it is being used
+    private final BigDecimal reservedPrice;
+    private final Instant startedAt;
+    private final Instant finishedAt;
 
     private ItemAuctionState itemAuctionState;
-    private long concludedOn;
+    private Instant concludedAt;
 
     private transient BidsHistory bidsHistory;
 
@@ -35,11 +37,11 @@ public final class ForwardAuctionItem implements Item {
     @Override
     public BidPlacementStatus recordBid(Bid bid) {
         if (!bid.getBidPlacementStatus().isFraud()) {
-            if (canPlaceBid(bid)) {
-                bid.setBidPlacementStatus(BidPlacementStatus.ACCEPTED);
-            } else {
-                bid.setBidPlacementStatus(BidPlacementStatus.REJECTED);
-            }
+            bid.setBidPlacementStatus(
+                    canPlaceBid(bid)
+                            ? BidPlacementStatus.ACCEPTED
+                            : BidPlacementStatus.REJECTED
+            );
         }
         this.bid = bid;
         return bid.getBidPlacementStatus();
@@ -49,7 +51,7 @@ public final class ForwardAuctionItem implements Item {
     public void conclude() {
         if (isAuctionEnded() || isAuctionNotStarted()) {
             itemAuctionState = ItemAuctionState.CONCLUDED;
-            this.concludedOn = System.currentTimeMillis();
+            this.concludedAt = Instant.now();
         }
     }
 
@@ -70,12 +72,14 @@ public final class ForwardAuctionItem implements Item {
 
     @Override
     public boolean isAuctionEnded() {
-        return endTimestamp < System.currentTimeMillis();
+        //TODO mfguven : We need to be clear on deciding state by time or ItemAuctionState
+        return finishedAt.isBefore(Instant.now());
     }
 
     @Override
     public boolean isAuctionNotStarted() {
-        return startTimestamp > System.currentTimeMillis();
+        //TODO mfguven : We need to be clear on deciding state by time or ItemAuctionState
+        return startedAt.isAfter(Instant.now());
     }
 
     @Override

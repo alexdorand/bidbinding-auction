@@ -1,15 +1,13 @@
 package com.bidbinding.auction.engine.application.core.model.bid;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@AllArgsConstructor
-@NoArgsConstructor
 @Data
 public class BidsHistory {
 
@@ -18,8 +16,27 @@ public class BidsHistory {
     private Map<String, String> detectedFraudulentBids;
     private Bid winningBid;
 
+    public BidsHistory() {
+        this.bids = new ArrayList<>();
+        this.rejectedBids = new ArrayList<>();
+        this.detectedFraudulentBids = new HashMap<>();
+        this.winningBid = null;
+    }
+
+    public BidsHistory(
+            List<Bid> bids,
+            List<Bid> rejectedBids,
+            Map<String, String> detectedFraudulentBids,
+            Bid winningBid
+    ) {
+        this.bids = bids;
+        this.rejectedBids = rejectedBids;
+        this.detectedFraudulentBids = detectedFraudulentBids;
+        this.winningBid = winningBid;
+    }
+
     public boolean bidderAttemptedFraudOnThisItemAlready(String bidder) {
-        return detectedFraudulentBids != null && detectedFraudulentBids.keySet().contains(bidder);
+        return detectedFraudulentBids.containsKey(bidder);
     }
 
     public boolean isThereAPreviousWinner() {
@@ -27,7 +44,6 @@ public class BidsHistory {
     }
 
     public boolean isWinningBidOutbid(BigDecimal amount) {
-        return winningBid.getAmount().doubleValue() < amount.doubleValue();
+        return winningBid == null || winningBid.getAmount().compareTo(amount) < 0;
     }
-
 }

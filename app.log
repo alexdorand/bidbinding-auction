@@ -124,7 +124,7 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2023-07-04 00:00:19,295 INFO [RMI TCP Connection(3)-10.0.0.53] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
 2023-07-04 00:00:23,193 ERROR [http-nio-8081-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.application.FraudDetectionService.isBidFraud(String)" because "this.fraudDetectionService" is null] with root cause
 java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.application.FraudDetectionService.isBidFraud(String)" because "this.fraudDetectionService" is null
-	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUsecase.recordBid(SealedBidsUsecase.java:20)
+	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUseCase.recordBid(SealedBidsUsecase.java:20)
 	at com.bidbinding.auction.engine.adapter.driver.BidController.registerBid(BidController.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -288,7 +288,7 @@ java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.app
 2023-07-04 01:20:41,275 ERROR [http-nio-8081-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(com.bidbinding.auction.engine.model.Bid)" because "this.itemBidsStream" is null] with root cause
 java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(com.bidbinding.auction.engine.model.Bid)" because "this.itemBidsStream" is null
 	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.canBeRecorded(AuctionPortImpl.java:15)
-	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUsecase.recordBid(SealedBidsUsecase.java:30)
+	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUseCase.recordBid(SealedBidsUsecase.java:30)
 	at com.bidbinding.auction.engine.adapter.driver.BidController.registerBid(BidController.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -362,7 +362,7 @@ java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.ada
 2023-07-04 01:23:50,990 ERROR [http-nio-8081-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(com.bidbinding.auction.engine.model.Bid)" because "this.itemBidsStream" is null] with root cause
 java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(com.bidbinding.auction.engine.model.Bid)" because "this.itemBidsStream" is null
 	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.canBeRecorded(AuctionPortImpl.java:15)
-	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUsecase.recordBid(SealedBidsUsecase.java:30)
+	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUseCase.recordBid(SealedBidsUsecase.java:30)
 	at com.bidbinding.auction.engine.adapter.driver.BidController.registerBid(BidController.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -421,7 +421,7 @@ java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.ada
 2023-07-04 01:24:29,741 ERROR [http-nio-8081-exec-4] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(com.bidbinding.auction.engine.model.Bid)" because "this.itemBidsStream" is null] with root cause
 java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(com.bidbinding.auction.engine.model.Bid)" because "this.itemBidsStream" is null
 	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.canBeRecorded(AuctionPortImpl.java:15)
-	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUsecase.recordBid(SealedBidsUsecase.java:30)
+	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUseCase.recordBid(SealedBidsUsecase.java:30)
 	at com.bidbinding.auction.engine.adapter.driver.BidController.registerBid(BidController.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -497,7 +497,7 @@ java.lang.NullPointerException: Cannot invoke "Object.hashCode()" because "key" 
 	at java.base/java.util.concurrent.ConcurrentHashMap.get(ConcurrentHashMap.java:936)
 	at com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(ItemBidsStreamService.java:34)
 	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.canBeRecorded(AuctionPortImpl.java:17)
-	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUsecase.recordBid(SealedBidsUsecase.java:30)
+	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUseCase.recordBid(SealedBidsUsecase.java:30)
 	at com.bidbinding.auction.engine.adapter.driver.BidController.registerBid(BidController.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -558,7 +558,7 @@ java.lang.NullPointerException: Cannot invoke "Object.hashCode()" because "key" 
 	at java.base/java.util.concurrent.ConcurrentHashMap.get(ConcurrentHashMap.java:936)
 	at com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(ItemBidsStreamService.java:34)
 	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.canBeRecorded(AuctionPortImpl.java:17)
-	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUsecase.recordBid(SealedBidsUsecase.java:30)
+	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUseCase.recordBid(SealedBidsUsecase.java:30)
 	at com.bidbinding.auction.engine.adapter.driver.BidController.registerBid(BidController.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -619,7 +619,7 @@ java.lang.NullPointerException: Cannot invoke "Object.hashCode()" because "key" 
 	at java.base/java.util.concurrent.ConcurrentHashMap.get(ConcurrentHashMap.java:936)
 	at com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(ItemBidsStreamService.java:34)
 	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.canBeRecorded(AuctionPortImpl.java:17)
-	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUsecase.recordBid(SealedBidsUsecase.java:30)
+	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUseCase.recordBid(SealedBidsUsecase.java:30)
 	at com.bidbinding.auction.engine.adapter.driver.BidController.registerBid(BidController.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -680,7 +680,7 @@ java.lang.NullPointerException: Cannot invoke "Object.hashCode()" because "key" 
 	at java.base/java.util.concurrent.ConcurrentHashMap.get(ConcurrentHashMap.java:936)
 	at com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(ItemBidsStreamService.java:34)
 	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.canBeRecorded(AuctionPortImpl.java:17)
-	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUsecase.recordBid(SealedBidsUsecase.java:30)
+	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUseCase.recordBid(SealedBidsUsecase.java:30)
 	at com.bidbinding.auction.engine.adapter.driver.BidController.registerBid(BidController.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -741,7 +741,7 @@ java.lang.NullPointerException: Cannot invoke "Object.hashCode()" because "key" 
 	at java.base/java.util.concurrent.ConcurrentHashMap.get(ConcurrentHashMap.java:936)
 	at com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(ItemBidsStreamService.java:34)
 	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.canBeRecorded(AuctionPortImpl.java:17)
-	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUsecase.recordBid(SealedBidsUsecase.java:30)
+	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUseCase.recordBid(SealedBidsUsecase.java:30)
 	at com.bidbinding.auction.engine.adapter.driver.BidController.registerBid(BidController.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -817,7 +817,7 @@ java.lang.NullPointerException: Cannot invoke "Object.hashCode()" because "key" 
 java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.model.Bid.getAmount()" because the return value of "java.util.Map.get(Object)" is null
 	at com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(ItemBidsStreamService.java:34)
 	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.canBeRecorded(AuctionPortImpl.java:17)
-	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUsecase.recordBid(SealedBidsUsecase.java:30)
+	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUseCase.recordBid(SealedBidsUsecase.java:30)
 	at com.bidbinding.auction.engine.adapter.driver.BidController.registerBid(BidController.java:20)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -877,7 +877,7 @@ java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.mod
 java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.model.Bid.getAmount()" because the return value of "java.util.Map.get(Object)" is null
 	at com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(ItemBidsStreamService.java:34)
 	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.canBeRecorded(AuctionPortImpl.java:17)
-	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUsecase.recordBid(SealedBidsUsecase.java:30)
+	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUseCase.recordBid(SealedBidsUsecase.java:30)
 	at com.bidbinding.auction.engine.adapter.driver.BidController.registerBid(BidController.java:20)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -937,7 +937,7 @@ java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.mod
 java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.model.Bid.getAmount()" because the return value of "java.util.Map.get(Object)" is null
 	at com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(ItemBidsStreamService.java:34)
 	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.canBeRecorded(AuctionPortImpl.java:17)
-	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUsecase.recordBid(SealedBidsUsecase.java:30)
+	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUseCase.recordBid(SealedBidsUsecase.java:30)
 	at com.bidbinding.auction.engine.adapter.driver.BidController.registerBid(BidController.java:20)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -997,7 +997,7 @@ java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.mod
 java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.model.Bid.getAmount()" because the return value of "java.util.Map.get(Object)" is null
 	at com.bidbinding.auction.engine.adapter.driven.ItemBidsStreamAdapter.compareToLastBid(ItemBidsStreamService.java:34)
 	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.canBeRecorded(AuctionPortImpl.java:17)
-	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUsecase.recordBid(SealedBidsUsecase.java:30)
+	at com.bidbinding.auction.engine.application.core.usecase.SealedBidsUseCase.recordBid(SealedBidsUsecase.java:30)
 	at com.bidbinding.auction.engine.adapter.driver.BidController.registerBid(BidController.java:20)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -1085,7 +1085,7 @@ java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.mod
 2023-07-04 01:37:25,186 INFO [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
 2023-07-05 01:05:26,054 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 80610 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
 2023-07-05 01:05:26,057 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
-2023-07-05 01:05:26,610 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:616] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'placeBidUsecase' defined in class path resource [com/bidbinding/auction/engine/adapter/driver/DriverConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=driverConfiguration; factoryMethodName=placeBidUsecase; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/bidbinding/auction/engine/adapter/driver/DriverConfiguration.class]] for bean 'placeBidUsecase' since there is already [Generic bean: class [com.bidbinding.auction.engine.application.core.usecase.PlaceBidUsecase]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in file [/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes/com/bidbinding/auction/engine/application/core/usecase/PlaceBidUsecase.class]] bound.
+2023-07-05 01:05:26,610 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:616] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'placeBidUsecase' defined in class path resource [com/bidbinding/auction/engine/adapter/driver/DriverConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=driverConfiguration; factoryMethodName=placeBidUsecase; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/bidbinding/auction/engine/adapter/driver/DriverConfiguration.class]] for bean 'placeBidUsecase' since there is already [Generic bean: class [com.bidbinding.auction.engine.application.core.usecase.PlaceBidUseCase]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in file [/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes/com/bidbinding/auction/engine/application/core/usecase/PlaceBidUsecase.class]] bound.
 2023-07-05 01:05:26,621 INFO [main] o.s.b.a.l.ConditionEvaluationReportLogger [ConditionEvaluationReportLogger.java:82] 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
@@ -1105,7 +1105,7 @@ Consider renaming one of the beans or enabling overriding by setting spring.main
 
 2023-07-05 01:06:46,172 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 80628 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
 2023-07-05 01:06:46,175 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
-2023-07-05 01:06:46,662 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:616] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'placeBidUsecase' defined in class path resource [com/bidbinding/auction/engine/adapter/driver/DriverConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=driverConfiguration; factoryMethodName=placeBidUsecase; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/bidbinding/auction/engine/adapter/driver/DriverConfiguration.class]] for bean 'placeBidUsecase' since there is already [Generic bean: class [com.bidbinding.auction.engine.application.core.usecase.PlaceBidUsecase]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in file [/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes/com/bidbinding/auction/engine/application/core/usecase/PlaceBidUsecase.class]] bound.
+2023-07-05 01:06:46,662 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:616] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'placeBidUsecase' defined in class path resource [com/bidbinding/auction/engine/adapter/driver/DriverConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=driverConfiguration; factoryMethodName=placeBidUsecase; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/bidbinding/auction/engine/adapter/driver/DriverConfiguration.class]] for bean 'placeBidUsecase' since there is already [Generic bean: class [com.bidbinding.auction.engine.application.core.usecase.PlaceBidUseCase]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in file [/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes/com/bidbinding/auction/engine/application/core/usecase/PlaceBidUsecase.class]] bound.
 2023-07-05 01:06:46,673 INFO [main] o.s.b.a.l.ConditionEvaluationReportLogger [ConditionEvaluationReportLogger.java:82] 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
@@ -1125,7 +1125,7 @@ Consider renaming one of the beans or enabling overriding by setting spring.main
 
 2023-07-06 10:31:06,329 INFO [main] c.b.a.e.i.BidBindingApplication [StartupInfoLogger.java:51] Starting BidBindingApplication using Java 17.0.7 with PID 81591 (/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes started by ad in /Users/ad/IdeaProjects/bidbinding-auction)
 2023-07-06 10:31:06,335 INFO [main] c.b.a.e.i.BidBindingApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
-2023-07-06 10:31:06,955 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:616] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'placeBidUsecase' defined in class path resource [com/bidbinding/auction/engine/adapter/driver/DriverConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=driverConfiguration; factoryMethodName=placeBidUsecase; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/bidbinding/auction/engine/adapter/driver/DriverConfiguration.class]] for bean 'placeBidUsecase' since there is already [Generic bean: class [com.bidbinding.auction.engine.application.core.usecase.PlaceBidUsecase]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in file [/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes/com/bidbinding/auction/engine/application/core/usecase/PlaceBidUsecase.class]] bound.
+2023-07-06 10:31:06,955 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:616] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'placeBidUsecase' defined in class path resource [com/bidbinding/auction/engine/adapter/driver/DriverConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=driverConfiguration; factoryMethodName=placeBidUsecase; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/bidbinding/auction/engine/adapter/driver/DriverConfiguration.class]] for bean 'placeBidUsecase' since there is already [Generic bean: class [com.bidbinding.auction.engine.application.core.usecase.PlaceBidUseCase]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in file [/Users/ad/IdeaProjects/bidbinding-auction/engine-core/target/classes/com/bidbinding/auction/engine/application/core/usecase/PlaceBidUsecase.class]] bound.
 2023-07-06 10:31:06,974 INFO [main] o.s.b.a.l.ConditionEvaluationReportLogger [ConditionEvaluationReportLogger.java:82] 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
@@ -1161,8 +1161,8 @@ Consider renaming one of the beans or enabling overriding by setting spring.main
 2023-07-06 10:37:36,167 ERROR [http-nio-8081-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.application.core.model.bid.Bid.declareWinner()" because "bid" is null] with root cause
 java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.application.core.model.bid.Bid.declareWinner()" because "bid" is null
 	at com.bidbinding.auction.engine.application.core.model.item.ForwardAuctionItem.recordBid(ForwardAuctionItem.java:40)
-	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUsecase.placeBid(ForwardAuctionUsecase.java:34)
-	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUsecase.placeBid(PlaceBidUsecase.java:34)
+	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUseCase.placeBid(ForwardAuctionUsecase.java:34)
+	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUseCase.placeBid(PlaceBidUsecase.java:34)
 	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBid(PlaceBidAdapter.java:21)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -1236,8 +1236,8 @@ java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.app
 2023-07-06 10:40:21,932 ERROR [http-nio-8081-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.application.core.model.bid.Bid.declareWinner()" because "bid" is null] with root cause
 java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.application.core.model.bid.Bid.declareWinner()" because "bid" is null
 	at com.bidbinding.auction.engine.application.core.model.item.ForwardAuctionItem.recordBid(ForwardAuctionItem.java:40)
-	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUsecase.placeBid(ForwardAuctionUsecase.java:34)
-	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUsecase.placeBid(PlaceBidUsecase.java:34)
+	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUseCase.placeBid(ForwardAuctionUsecase.java:34)
+	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUseCase.placeBid(PlaceBidUsecase.java:34)
 	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBid(PlaceBidAdapter.java:21)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -3996,8 +3996,8 @@ java.sql.SQLSyntaxErrorException: Unknown column 'a' in 'field list'
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:244)
 	at jdk.proxy2/jdk.proxy2.$Proxy127.getItemByItemId(Unknown Source)
 	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.updateForwardItem(AuctionPortAdapter.java:36)
-	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUsecase.placeBid(ForwardAuctionUsecase.java:35)
-	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUsecase.placeBid(PlaceBidUsecase.java:35)
+	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUseCase.placeBid(ForwardAuctionUsecase.java:35)
+	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUseCase.placeBid(PlaceBidUsecase.java:35)
 	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBid(PlaceBidAdapter.java:29)
 	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBidExpand(PlaceBidAdapter.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -4821,8 +4821,8 @@ java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key '
 	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.lambda$updateForwardItem$1(AuctionPortAdapter.java:46)
 	at java.base/java.util.Optional.ifPresent(Optional.java:178)
 	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.updateForwardItem(AuctionPortAdapter.java:41)
-	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUsecase.placeBid(ForwardAuctionUsecase.java:35)
-	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUsecase.placeBid(PlaceBidUsecase.java:35)
+	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUseCase.placeBid(ForwardAuctionUsecase.java:35)
+	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUseCase.placeBid(PlaceBidUsecase.java:35)
 	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBid(PlaceBidAdapter.java:29)
 	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBidExpand(PlaceBidAdapter.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -4954,8 +4954,8 @@ java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 0
 	at java.base/java.util.Objects.checkIndex(Objects.java:359)
 	at java.base/java.util.ArrayList.get(ArrayList.java:427)
 	at com.bidbinding.auction.engine.adapter.driven.AuctionPortAdapter.getForwardItem(AuctionPortAdapter.java:67)
-	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUsecase.placeBid(ForwardAuctionUsecase.java:30)
-	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUsecase.placeBid(PlaceBidUsecase.java:35)
+	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUseCase.placeBid(ForwardAuctionUsecase.java:30)
+	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUseCase.placeBid(PlaceBidUsecase.java:35)
 	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBid(PlaceBidAdapter.java:29)
 	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBidExpand(PlaceBidAdapter.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -6030,8 +6030,8 @@ java.util.NoSuchElementException: No value present
 2023-07-09 02:39:42,998 ERROR [http-nio-8081-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.adapter.driven.service.FraudDetectionService.detectFraud(com.bidbinding.auction.engine.adapter.driven.dto.BidFraudDto)" because "this.fraudDetectionService" is null] with root cause
 java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.adapter.driven.service.FraudDetectionService.detectFraud(com.bidbinding.auction.engine.adapter.driven.dto.BidFraudDto)" because "this.fraudDetectionService" is null
 	at com.bidbinding.auction.engine.adapter.driven.FraudDetectionAdapter.checkFraudProbability(FraudDetectionAdapter.java:23)
-	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUsecase.placeBid(ForwardAuctionUsecase.java:25)
-	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUsecase.placeBid(PlaceBidUsecase.java:35)
+	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUseCase.placeBid(ForwardAuctionUsecase.java:25)
+	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUseCase.placeBid(PlaceBidUsecase.java:35)
 	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBid(PlaceBidAdapter.java:30)
 	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBidExpand(PlaceBidAdapter.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -6124,8 +6124,8 @@ java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.ada
 2023-07-09 02:40:59,704 INFO [RMI TCP Connection(3)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
 2023-07-09 02:41:06,708 ERROR [http-nio-8081-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.application.core.model.item.ForwardAuctionItem.recordBid(com.bidbinding.auction.engine.application.core.model.bid.Bid)" because "item" is null] with root cause
 java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.application.core.model.item.ForwardAuctionItem.recordBid(com.bidbinding.auction.engine.application.core.model.bid.Bid)" because "item" is null
-	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUsecase.placeBid(ForwardAuctionUsecase.java:28)
-	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUsecase.placeBid(PlaceBidUsecase.java:35)
+	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUseCase.placeBid(ForwardAuctionUsecase.java:28)
+	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUseCase.placeBid(PlaceBidUsecase.java:35)
 	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBid(PlaceBidAdapter.java:30)
 	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBidExpand(PlaceBidAdapter.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -6219,8 +6219,8 @@ java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.app
 2023-07-09 02:43:16,407 ERROR [http-nio-8081-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.application.core.model.bid.BidPlacementStatus.isFraud()" because the return value of "com.bidbinding.auction.engine.application.core.model.bid.Bid.getBidPlacementStatus()" is null] with root cause
 java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.application.core.model.bid.BidPlacementStatus.isFraud()" because the return value of "com.bidbinding.auction.engine.application.core.model.bid.Bid.getBidPlacementStatus()" is null
 	at com.bidbinding.auction.engine.application.core.model.item.ForwardAuctionItem.recordBid(ForwardAuctionItem.java:30)
-	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUsecase.placeBid(ForwardAuctionUsecase.java:28)
-	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUsecase.placeBid(PlaceBidUsecase.java:35)
+	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUseCase.placeBid(ForwardAuctionUsecase.java:28)
+	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUseCase.placeBid(PlaceBidUsecase.java:35)
 	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBid(PlaceBidAdapter.java:30)
 	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBidExpand(PlaceBidAdapter.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -6314,8 +6314,8 @@ java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.app
 2023-07-09 02:44:51,801 ERROR [http-nio-8081-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.application.core.model.bid.BidPlacementStatus.isFraud()" because the return value of "com.bidbinding.auction.engine.application.core.model.bid.Bid.getBidPlacementStatus()" is null] with root cause
 java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.application.core.model.bid.BidPlacementStatus.isFraud()" because the return value of "com.bidbinding.auction.engine.application.core.model.bid.Bid.getBidPlacementStatus()" is null
 	at com.bidbinding.auction.engine.application.core.model.item.ForwardAuctionItem.recordBid(ForwardAuctionItem.java:30)
-	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUsecase.placeBid(ForwardAuctionUsecase.java:28)
-	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUsecase.placeBid(PlaceBidUsecase.java:35)
+	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUseCase.placeBid(ForwardAuctionUsecase.java:28)
+	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUseCase.placeBid(PlaceBidUsecase.java:35)
 	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBid(PlaceBidAdapter.java:30)
 	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBidExpand(PlaceBidAdapter.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -6410,8 +6410,8 @@ java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.app
 2023-07-09 02:47:08,572 ERROR [http-nio-8081-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.application.core.model.bid.BidPlacementStatus.isFraud()" because the return value of "com.bidbinding.auction.engine.application.core.model.bid.Bid.getBidPlacementStatus()" is null] with root cause
 java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.application.core.model.bid.BidPlacementStatus.isFraud()" because the return value of "com.bidbinding.auction.engine.application.core.model.bid.Bid.getBidPlacementStatus()" is null
 	at com.bidbinding.auction.engine.application.core.model.item.ForwardAuctionItem.recordBid(ForwardAuctionItem.java:30)
-	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUsecase.placeBid(ForwardAuctionUsecase.java:28)
-	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUsecase.placeBid(PlaceBidUsecase.java:35)
+	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUseCase.placeBid(ForwardAuctionUsecase.java:28)
+	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUseCase.placeBid(PlaceBidUsecase.java:35)
 	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBid(PlaceBidAdapter.java:30)
 	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBidExpand(PlaceBidAdapter.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -7800,8 +7800,8 @@ java.lang.NullPointerException: Cannot invoke "java.util.Map.keySet()" because "
 	at com.bidbinding.auction.engine.application.core.model.bid.BidsHistory.bidderAttemptedFraudOnThisItemAlready(BidsHistory.java:22)
 	at com.bidbinding.auction.engine.application.core.model.item.ForwardAuctionItem.canPlaceBid(ForwardAuctionItem.java:62)
 	at com.bidbinding.auction.engine.application.core.model.item.ForwardAuctionItem.recordBid(ForwardAuctionItem.java:38)
-	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUsecase.placeBid(ForwardAuctionUsecase.java:30)
-	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUsecase.placeBid(PlaceBidUsecase.java:29)
+	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUseCase.placeBid(ForwardAuctionUsecase.java:30)
+	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUseCase.placeBid(PlaceBidUsecase.java:29)
 	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBid(PlaceBidAdapter.java:32)
 	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBidExpand(PlaceBidAdapter.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -7910,8 +7910,8 @@ java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.app
 	at com.bidbinding.auction.engine.adapter.driven.ItemTimestreamService.asyncRecordImmutableBid(ItemTimestreamService.java:37)
 	at com.bidbinding.auction.engine.adapter.driven.ItemAdapter.updateItem(ItemAdapter.java:28)
 	at com.bidbinding.auction.engine.adapter.driven.ItemAdapter.updateItem(ItemAdapter.java:12)
-	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUsecase.placeBid(ForwardAuctionUsecase.java:33)
-	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUsecase.placeBid(PlaceBidUsecase.java:29)
+	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUseCase.placeBid(ForwardAuctionUsecase.java:33)
+	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUseCase.placeBid(PlaceBidUsecase.java:29)
 	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBid(PlaceBidAdapter.java:32)
 	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBidExpand(PlaceBidAdapter.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -8021,8 +8021,8 @@ java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.app
 	at com.bidbinding.auction.engine.adapter.driven.ItemTimestreamService.asyncRecordImmutableBid(ItemTimestreamService.java:37)
 	at com.bidbinding.auction.engine.adapter.driven.ItemAdapter.updateItem(ItemAdapter.java:28)
 	at com.bidbinding.auction.engine.adapter.driven.ItemAdapter.updateItem(ItemAdapter.java:12)
-	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUsecase.placeBid(ForwardAuctionUsecase.java:33)
-	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUsecase.placeBid(PlaceBidUsecase.java:29)
+	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUseCase.placeBid(ForwardAuctionUsecase.java:33)
+	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUseCase.placeBid(PlaceBidUsecase.java:29)
 	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBid(PlaceBidAdapter.java:32)
 	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBidExpand(PlaceBidAdapter.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -8131,8 +8131,8 @@ java.lang.NullPointerException: Cannot invoke "com.bidbinding.auction.engine.app
 	at com.bidbinding.auction.engine.adapter.driven.ItemTimestreamService.asyncRecordImmutableBid(ItemTimestreamService.java:38)
 	at com.bidbinding.auction.engine.adapter.driven.ItemAdapter.updateItem(ItemAdapter.java:28)
 	at com.bidbinding.auction.engine.adapter.driven.ItemAdapter.updateItem(ItemAdapter.java:12)
-	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUsecase.placeBid(ForwardAuctionUsecase.java:33)
-	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUsecase.placeBid(PlaceBidUsecase.java:29)
+	at com.bidbinding.auction.engine.application.core.usecase.ForwardAuctionUseCase.placeBid(ForwardAuctionUsecase.java:33)
+	at com.bidbinding.auction.engine.application.core.usecase.PlaceBidUseCase.placeBid(PlaceBidUsecase.java:29)
 	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBid(PlaceBidAdapter.java:32)
 	at com.bidbinding.auction.engine.adapter.driver.rest.PlaceBidAdapter.placeBidExpand(PlaceBidAdapter.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
